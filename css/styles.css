@@ -10,15 +10,24 @@ nav {
 	border-bottom: 1px solid silver;
 }
 
-.nav-content {
+.button-full{
+	align-items: center;
+	background-color: #FFBA33;
+	border-radius: 20px;
+	border-width: 0;
+	color : #6A4029;
 	display: flex;
 	flex-direction: row;
-	align-items: center;
-	justify-content: space-between;
+	font-weight: bold;
+	height : 40px;
+	justify-content: center;	
+	padding-left: 24px;
+	padding-right: 24px;
 }
 
-.font-rubik {
-	font-family: "Rubik", sans-serif;
+.button-full:hover{
+	background-color: #6A4029;
+	color : #fff
 }
 
 .container {
@@ -30,14 +39,14 @@ nav {
 	max-width: 500px;
 }
 
+.font-rubik {
+	font-family: "Rubik", sans-serif;
+}
+
 .logo {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-}
-
-.logo-wrapper {
-	width: 30px;
 }
 
 .logo-image {
@@ -49,6 +58,44 @@ nav {
 	margin-top: 0;
 	margin-bottom: 0;
 	margin-left: 5px;
+}
+
+.logo-wrapper {
+	width: 30px;
+}
+
+.menu{
+	display : none;
+}
+
+.menu ul{
+	list-style-type: none;
+	display : flex;
+	flex-direction: row;
+	align-items: center;
+	margin : 0;
+	padding : 0;
+}
+
+.menu ul li{
+	margin : 0 20px;
+}
+
+.menu ul li a{
+	text-decoration : none;
+	color : #4F5665;
+}
+
+.menu ul li a:hover{
+	color : #6A4029;
+	font-weight: bold;
+}
+
+.nav-content {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
 }
 
 .toggle-button {
@@ -66,36 +113,4 @@ nav {
 
 .toggle-button:hover {
 	background-color: #995c3a;
-}
-
-/* medium mobile display */
-@media (min-width: 640px) {
-	.container {
-		max-width: 640px;
-	}
-
-	.logo-name {
-		display: inline-block;
-	}
-}
-
-/* tablet display*/
-@media (min-width: 768px) {
-	.container {
-		max-width: 768px;
-	}
-}
-
-/* medium desktop display */
-@media (min-width: 1024px) {
-	.container {
-		max-width: 1024px;
-	}
-}
-
-/* desktop display */
-@media (min-width: 1280px) {
-	.container {
-		max-width: 1280px;
-	}
 }
