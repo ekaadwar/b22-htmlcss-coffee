@@ -6,4 +6,8 @@
 	.container {
 		max-width: 768px;
 	}
+
+	.section-first{
+		margin-top: 70px;
+	}
 }

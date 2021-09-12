@@ -8,6 +8,10 @@ nav {
 	display: flex;
 	align-items: center;
 	border-bottom: 1px solid silver;
+	position: fixed;
+	top:0;
+	width: 100%;
+	z-index: 255;
 }
 
 .button-full{
@@ -37,10 +41,28 @@ nav {
 	/* background-color: honeydew; */
 	width: 100%;
 	max-width: 500px;
+	box-sizing: border-box;
+}
+
+.section-first{
+	margin-top: 50px;
 }
 
 .font-rubik {
 	font-family: "Rubik", sans-serif;
+}
+
+.font-poppins{
+	font-family: 'Poppins', sans-serif;
+}
+
+.jumbotron {
+	min-height: 645px;
+	background-image: url("../img/home.png");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+  background-position: center;
+	background-size: cover;
 }
 
 .logo {
@@ -97,6 +119,24 @@ nav {
 	align-items: center;
 	justify-content: space-between;
 }
+
+.search {
+	height: 40px;
+	border-radius: 20px;
+	border-width: 0;
+	padding-left: 60px;
+	padding-right: 20px;
+}
+
+.search-wrapper{
+	position: relative;	
+}
+
+.search-icon {
+	margin-top: -33px;
+	margin-left: 20px;
+}
+
 
 .toggle-button {
 	background-color: #6a4029;
