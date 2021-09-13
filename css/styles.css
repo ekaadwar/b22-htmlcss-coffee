@@ -31,34 +31,35 @@ section.advantages {
   background-color: white;
 }
 
-section.advantages li {
-  align-items: center;
-	display: flex;
+section li {
+  align-items: flex-start;
+  display: flex;
   flex-direction: row;
 }
 
-section.advantages p {
+section p {
   line-height: 30px;
 }
 
 section.advantages .explain {
   margin-bottom: 20px;
-	margin-top: 20px;
+  margin-top: 20px;
 }
 
-section.advantages .image{
-	max-width: 575px;
+section.advantages .image {
+  max-width: 575px;
 }
 
-section.advantages ul li .material-icons {
+section ul li .material-icons {
   color: #2fab73;
-	font-size: 14px;
+  font-size: 14px;
   margin-right: 10px;
+	padding-top: 8px;
 }
 
 section.advantages .wrapper-data {
   margin-bottom: 50px;
-	margin-top: 50px;
+  margin-top: 50px;
 }
 
 section.advantages .wrapper {
@@ -66,50 +67,102 @@ section.advantages .wrapper {
 }
 
 /* ---- */
-section.favorites{
-	padding-top: 50px;
-	padding-bottom: 50px;
+section.favorites {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
-section.favorites h2, section.favorites p{
-	text-align: center;
+section.favorites h2,
+section.favorites p {
+  text-align: center;
 }
 
-section.favorites p{
-	margin-top: 20px;
-	margin-bottom: 20px;
+section.favorites p.subtitle {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-section.favorites .card{
-	background-color: blueviolet;
-	width: 100%;
-	overflow-x: scroll;
+section.favorites button{
+	margin-top: 10px;
+}
+
+section.favorites .card {
+  /* background-color: blueviolet; */
+  width: 100%;
+  overflow-x: scroll;
 }
 
 section.favorites .card::-webkit-scrollbar {
   width: 0;
 }
 
-section.favorites .card-items{
-	background-color: white;
-	border: 1px solid #aaa;
-	width: 250px;
-	height: 760px;
-	display: inline-block;
+section.favorites .card-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  min-width: 800px;
+  width: 100%;
+  /* background-color: rgb(158, 149, 149); */
 }
 
-section.favorites .card-wrapper{
-	display:flex;
-	flex-direction: row;
-	justify-content: space-between;
-	min-width : 800px;
-	width: 100%;
-	background-color: rgb(158, 149, 149);
+section.favorites .card-items {
+  background-color: white;
+  border: 1px solid #aaa;
+  width: 300px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  align-items: center;
+}
+
+section.favorites .card-items.mid {
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 section.first {
   margin-top: 50px;
 }
+
+section.favorites .image {
+  width: 130px;
+  height: 130px;
+  border-radius: 65px;
+  background-color: burlywood;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+section.favorites .data {
+  flex: 1;
+  width: 100%;
+  padding-right: 30px;
+  padding-left: 30px;
+  box-sizing: border-box;
+	margin-top: 70px;
+}
+
+section.favorites .data h4{
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+section.favorites .data p{
+	text-align: left;
+}
+
+section.favorites .order {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
 /* /---- */
 
 section.jumbotron {
@@ -184,6 +237,16 @@ ul {
 .btn-c-yellow:active {
   background-color: #6a4029;
   color: #fff;
+}
+
+.btn-c-white {
+  background-color: white;
+  border: 1px solid #ffba33;
+  color: #6a4029;
+}
+
+.btn-c-white:active {
+  background-color: #ffba33;
 }
 
 .btn-rad-full {
@@ -399,7 +462,7 @@ ul {
 .wrapper-content {
   display: flex;
   flex-direction: row;
-	margin-top: 20px;
+  margin-top: 20px;
 }
 
 .wrapper-data {
