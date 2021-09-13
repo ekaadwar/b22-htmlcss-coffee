@@ -27,41 +27,90 @@ nav {
   z-index: 255;
 }
 
-section.first {
-  margin-top: 50px;
-}
-
 section.advantages {
   background-color: white;
 }
 
-/* ------ */
-
-.wrapper {
-  position: relative;
-  width: 100%;
-}
-
-.wrapper-content {
-  margin-top: 20px;
-  display: flex;
+section.advantages li {
+  align-items: center;
+	display: flex;
   flex-direction: row;
 }
 
-.wrapper-data {
-  flex: 1;
+section.advantages p {
+  line-height: 30px;
 }
 
-.wrapper-image {
-  display: none;
-  flex: 1;
+section.advantages .explain {
+  margin-bottom: 20px;
+	margin-top: 20px;
 }
 
-/* /------ */
+section.advantages .image{
+	max-width: 575px;
+}
+
+section.advantages ul li .material-icons {
+  color: #2fab73;
+	font-size: 14px;
+  margin-right: 10px;
+}
+
+section.advantages .wrapper-data {
+  margin-bottom: 50px;
+	margin-top: 50px;
+}
 
 section.advantages .wrapper {
   padding-top: 100px;
 }
+
+/* ---- */
+section.favorites{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+section.favorites h2, section.favorites p{
+	text-align: center;
+}
+
+section.favorites p{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+section.favorites .card{
+	background-color: blueviolet;
+	width: 100%;
+	overflow-x: scroll;
+}
+
+section.favorites .card::-webkit-scrollbar {
+  width: 0;
+}
+
+section.favorites .card-items{
+	background-color: white;
+	border: 1px solid #aaa;
+	width: 250px;
+	height: 760px;
+	display: inline-block;
+}
+
+section.favorites .card-wrapper{
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+	min-width : 800px;
+	width: 100%;
+	background-color: rgb(158, 149, 149);
+}
+
+section.first {
+  margin-top: 50px;
+}
+/* /---- */
 
 section.jumbotron {
   background-attachment: fixed;
@@ -109,43 +158,6 @@ section.jumbotron .title-main {
 p {
   font-size: 14px;
 }
-
-/* ---- */
-.text-secondary {
-  color: #4f5665;
-}
-
-section.advantages .explain {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-section.advantages p {
-  line-height: 30px;
-}
-
-section.advantages .wrapper-data {
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
-section.advantages ul li .material-icons {
-  font-size: 14px;
-  margin-right: 10px;
-  color: #2fab73;
-}
-
-section.advantages li {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-section.advantages .image{
-	max-width: 575px;
-}
-
-/* /---- */
 
 ul {
   list-style-type: none;
@@ -197,11 +209,9 @@ ul {
   margin: 0 auto;
   padding-left: 5px;
   padding-right: 5px;
-  /* background-color: honeydew; */
   width: 100%;
   max-width: 500px;
   box-sizing: border-box;
-  /* position: relative; */
 }
 
 .fliying {
@@ -343,17 +353,8 @@ ul {
   box-shadow: 0 0 20px #ffba33;
 }
 
-.toggle-button {
-  background-color: #6a4029;
-  height: 33px;
-  width: 30px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  border-radius: 5px;
-  cursor: pointer;
+.text-secondary {
+  color: #4f5665;
 }
 
 .title {
@@ -369,10 +370,43 @@ ul {
   line-height: 30px;
 }
 
+.toggle-button {
+  background-color: #6a4029;
+  height: 33px;
+  width: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 .toggle-button:hover {
   background-color: #995c3a;
 }
 
 .w-auto {
   width: auto;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.wrapper-content {
+  display: flex;
+  flex-direction: row;
+	margin-top: 20px;
+}
+
+.wrapper-data {
+  flex: 1;
+}
+
+.wrapper-image {
+  display: none;
+  flex: 1;
 }
