@@ -15,6 +15,8 @@ p {
   padding: 0;
 }
 
+
+
 nav {
   background-color: #fff;
   height: 50px;
@@ -50,6 +52,10 @@ section.advantages .image {
   max-width: 575px;
 }
 
+section.advantages .wrapper-image{
+	display: none;
+}
+
 section ul li .material-icons {
   color: #2fab73;
   font-size: 14px;
@@ -66,20 +72,9 @@ section.advantages .wrapper {
   padding-top: 100px;
 }
 
-/* ---- */
 section.favorites {
   padding-top: 50px;
   padding-bottom: 50px;
-}
-
-section.favorites h2,
-section.favorites p {
-  text-align: center;
-}
-
-section.favorites p.subtitle {
-  margin-top: 20px;
-  margin-bottom: 20px;
 }
 
 section.favorites button{
@@ -87,7 +82,6 @@ section.favorites button{
 }
 
 section.favorites .card {
-  /* background-color: blueviolet; */
   width: 100%;
   overflow-x: scroll;
 }
@@ -102,7 +96,6 @@ section.favorites .card-wrapper {
   justify-content: space-around;
   min-width: 800px;
   width: 100%;
-  /* background-color: rgb(158, 149, 149); */
 }
 
 section.favorites .card-items {
@@ -123,22 +116,6 @@ section.favorites .card-items.mid {
   margin-right: 20px;
 }
 
-section.first {
-  margin-top: 50px;
-}
-
-section.favorites .image {
-  width: 130px;
-  height: 130px;
-  border-radius: 65px;
-  background-color: burlywood;
-  overflow: hidden;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-
 section.favorites .data {
   flex: 1;
   width: 100%;
@@ -157,13 +134,27 @@ section.favorites .data p{
 	text-align: left;
 }
 
+section.favorites .image {
+  width: 130px;
+  height: 130px;
+  border-radius: 65px;
+  background-color: burlywood;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
 section.favorites .order {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
 
-/* /---- */
+section.first {
+  margin-top: 50px;
+}
 
 section.jumbotron {
   background-attachment: fixed;
@@ -207,6 +198,16 @@ section.jumbotron .title-sub,
 section.jumbotron .title-main {
   align-self: flex-start;
 }
+
+section.map{
+	padding-bottom: 50px;
+}
+
+/**/
+
+
+
+/*/*/
 
 p {
   font-size: 14px;
@@ -433,6 +434,26 @@ ul {
   line-height: 30px;
 }
 
+.title-section{
+	max-width: 300px;
+	text-align: center;
+	line-height: 40px;
+	margin-bottom: 20px;
+}
+
+.title-sub-section{
+	max-width: 500px;
+	text-align: center;
+	line-height: 25px;
+}
+
+.title-wrapper{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 50px;
+}
+
 .toggle-button {
   background-color: #6a4029;
   height: 33px;
@@ -470,6 +491,5 @@ ul {
 }
 
 .wrapper-image {
-  display: none;
   flex: 1;
 }

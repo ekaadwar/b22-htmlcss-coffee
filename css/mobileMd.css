@@ -1,5 +1,12 @@
 @media (min-width: 640px) {
-  .container {
+  section.advantages .wrapper-image{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.container {
     max-width: 640px;
   }
 
@@ -29,11 +36,4 @@
   .title-main {
     font-size: 60px;
   }
-
-	.wrapper-image{
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		align-items: center;
-	}
 }
