@@ -1,9 +1,39 @@
 @media (min-width: 640px) {
-	.container {
-		max-width: 640px;
+  .container {
+    max-width: 640px;
+  }
+
+  .fliying .circle {
+    margin-right: 10px;
+  }
+
+	.fliying-data {
+		min-height: 150px;
+		top : -75px;
 	}
 
-	.logo-name {
-		display: inline-block;
+  .flitying-data h4 {
+    margin: 0;
+  }
+
+  .fliying-section {
+    flex-direction: row;
+    justify-content: center;
+    text-align: left;
+  }
+
+  .logo-name {
+    display: inline-block;
+  }
+
+  .title-main {
+    font-size: 60px;
+  }
+
+	.wrapper-image{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
 	}
 }

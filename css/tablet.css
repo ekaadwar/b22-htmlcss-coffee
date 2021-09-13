@@ -2,12 +2,32 @@
 	nav{
 		height: 70px;
 	}
+
+	section.first{
+		margin-top: 70px;
+	}
 	
 	.container {
 		max-width: 768px;
 	}
 
-	.section-first{
-		margin-top: 70px;
+	section.jumbotron{
+		background-position: center 70px;
 	}
+
+	section.jumbotron .searching {
+    justify-content: flex-end;
+  }
+
+  section.jumbotron .content {
+    width: 50%;
+  }
+
+  section.jumbotron .content {
+    align-items: flex-start;
+  }
+
+  .search-wrapper {
+    width: 50%;
+  }
 }
