@@ -29,6 +29,10 @@
     text-align: left;
   }
 
+	footer .wrapper{
+		flex-direction: row;
+	}
+
   .logo-name {
     display: inline-block;
   }
