@@ -15,8 +15,6 @@ p {
   padding: 0;
 }
 
-
-
 nav {
   background-color: #fff;
   height: 50px;
@@ -52,15 +50,15 @@ section.advantages .image {
   max-width: 575px;
 }
 
-section.advantages .wrapper-image{
-	display: none;
+section.advantages .wrapper-image {
+  display: none;
 }
 
 section ul li .material-icons {
   color: #2fab73;
   font-size: 14px;
   margin-right: 10px;
-	padding-top: 8px;
+  padding-top: 8px;
 }
 
 section.advantages .wrapper-data {
@@ -77,20 +75,44 @@ section.favorites {
   padding-bottom: 50px;
 }
 
-section.favorites button{
-	margin-top: 10px;
+section.favorites button {
+  margin-top: 10px;
 }
 
-section.favorites .card {
+/**/
+
+.card {
   width: 100%;
   overflow-x: scroll;
 }
 
-section.favorites .card::-webkit-scrollbar {
+.card::-webkit-scrollbar {
   width: 0;
 }
 
-section.favorites .card-wrapper {
+
+
+.card-items {
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+section.testimony .card-items {
+  padding: 30px;
+	width: 400px;
+	height: 230px;
+}
+
+section.testimony .card-head{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+.card-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -98,17 +120,42 @@ section.favorites .card-wrapper {
   width: 100%;
 }
 
-section.favorites .card-items {
-  background-color: white;
+section.testimony .card-wrapper{
+	width : 1500px;
+}
+
+section.favorites .card-items, section.testimony .card-items {
   border: 1px solid #aaa;
-  width: 300px;
-  height: 600px;
-  display: flex;
-  flex-direction: column;
-  border-radius: 10px;
-  padding-top: 50px;
-  padding-bottom: 50px;
+}
+
+section.testimony .circle{
+	background-color: white;
+}
+
+section.testimony .card-head .info{
+	flex:1;
+	margin-left: 10px;
+}
+
+section.testimony .card-head .rating{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+section.testimony .card-head .rating .material-icons {
+	color : #ffba33;
+}
+
+/*/*/
+
+section.favorites .card-items {
   align-items: center;
+	border: 1px solid #aaa;
+	height: 600px;
+  padding-bottom: 50px;
+	padding-top: 50px;
+	width: 300px;
 }
 
 section.favorites .card-items.mid {
@@ -122,16 +169,16 @@ section.favorites .data {
   padding-right: 30px;
   padding-left: 30px;
   box-sizing: border-box;
-	margin-top: 70px;
+  margin-top: 70px;
 }
 
-section.favorites .data h4{
-	margin-bottom: 50px;
-	text-align: center;
+section.favorites .data h4 {
+  margin-bottom: 50px;
+  text-align: center;
 }
 
-section.favorites .data p{
-	text-align: left;
+section.favorites .data p {
+  text-align: left;
 }
 
 section.favorites .image {
@@ -147,9 +194,9 @@ section.favorites .image {
 }
 
 section.favorites .order {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 section.first {
@@ -199,13 +246,19 @@ section.jumbotron .title-main {
   align-self: flex-start;
 }
 
-section.map{
-	padding-bottom: 50px;
+section.map,
+section.partner,
+section.testimony {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+section.partner .image {
+  max-width: 150px;
+  width: 80%;
 }
 
 /**/
-
-
 
 /*/*/
 
@@ -266,6 +319,7 @@ ul {
   display: flex;
   height: 54px;
   justify-content: center;
+	overflow: hidden;
   width: 54px;
 }
 
@@ -421,11 +475,6 @@ ul {
   color: #4f5665;
 }
 
-.title {
-  margin: 0;
-  padding: 0;
-}
-
 .title-main {
   font-size: 40px;
 }
@@ -434,24 +483,24 @@ ul {
   line-height: 30px;
 }
 
-.title-section{
-	max-width: 300px;
-	text-align: center;
-	line-height: 40px;
-	margin-bottom: 20px;
+.title-section {
+  max-width: 300px;
+  text-align: center;
+  line-height: 40px;
+  margin-bottom: 20px;
 }
 
-.title-sub-section{
-	max-width: 500px;
-	text-align: center;
-	line-height: 25px;
+.title-sub-section {
+  max-width: 500px;
+  text-align: center;
+  line-height: 25px;
 }
 
-.title-wrapper{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin-bottom: 50px;
+.title-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
 }
 
 .toggle-button {
@@ -483,6 +532,7 @@ ul {
 .wrapper-content {
   display: flex;
   flex-direction: row;
+  align-items: center;
   margin-top: 20px;
 }
 
@@ -491,5 +541,9 @@ ul {
 }
 
 .wrapper-image {
+  display: flex;
   flex: 1;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
