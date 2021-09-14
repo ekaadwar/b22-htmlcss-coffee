@@ -19,13 +19,10 @@ p {
   padding: 0;
 }
 
-
-/**/
-
 footer{
 	background-color: #eee;
-	padding-top: 40px;
 	padding-bottom: 40px;
+	padding-top: 40px;
 }
 
 footer .logo-name{
@@ -38,29 +35,22 @@ footer .left-side{
 
 footer .left-side p{
 	font-weight: bold;
-	max-width: 290px;
-	margin-top: 20px;
 	margin-bottom: 20px;
+	margin-top: 20px;
+	max-width: 290px;
 }
 
-footer .wrapper{
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: flex-start;
-}
-
-footer .account{
+footer .left-side .account{
 	display: flex;
 	flex-direction: row;
 }
 
-footer .account .circle{
+footer .left-side .account .circle{
 	background-color: #6a4029 !important;
-	height: 30px;
-	width: 30px;
 	border-radius: 15px;
+	height: 30px;
 	margin-right: 10px;
+	width: 30px;
 }
 
 footer .right-side{
@@ -76,8 +66,12 @@ footer .right-side h4{
 	margin-bottom: 10px;
 }
 
-
-/*/*/
+footer .wrapper{
+	align-items: flex-start;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
 
 nav {
   background-color: #fff;
@@ -143,76 +137,6 @@ section.favorites button {
   margin-top: 10px;
 }
 
-/*dev*/
-
-.card {
-  width: 100%;
-  overflow-x: scroll;
-}
-
-.card::-webkit-scrollbar {
-  width: 0;
-}
-
-
-
-.card-items {
-  background-color: white;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-}
-
-section.testimony .card-items {
-  padding: 30px;
-	width: 400px;
-	height: 230px;
-}
-
-section.testimony .card-head{
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	margin-bottom: 30px;
-}
-
-.card-wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  min-width: 800px;
-  width: 100%;
-}
-
-section.testimony .card-wrapper{
-	width : 1500px;
-}
-
-section.favorites .card-items, section.testimony .card-items {
-  border: 1px solid #aaa;
-}
-
-section.testimony .circle{
-	background-color: white;
-}
-
-section.testimony .card-head .info{
-	flex:1;
-	margin-left: 10px;
-}
-
-section.testimony .card-head .rating{
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-}
-
-section.testimony .card-head .rating .material-icons {
-	color : #ffba33;
-}
-
-/*/*/
-
 section.favorites .card-items {
   align-items: center;
 	border: 1px solid #aaa;
@@ -220,6 +144,10 @@ section.favorites .card-items {
   padding-bottom: 50px;
 	padding-top: 50px;
 	width: 300px;
+}
+
+section.favorites .card-items, section.testimony .card-items {
+  border: 1px solid #aaa;
 }
 
 section.favorites .card-items.mid {
@@ -322,6 +250,42 @@ section.partner .image {
   width: 80%;
 }
 
+section.testimony .card-head{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+section.testimony .card-head .info{
+	flex:1;
+	margin-left: 10px;
+}
+
+section.testimony .card-head .rating{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+section.testimony .card-head .rating .material-icons {
+	color : #ffba33;
+}
+
+section.testimony .card-items {
+  padding: 30px;
+	width: 400px;
+	height: 230px;
+}
+
+section.testimony .card-wrapper{
+	width : 1500px;
+}
+
+section.testimony .circle{
+	background-color: white;
+}
+
 p {
   font-size: 14px;
 }
@@ -371,10 +335,33 @@ ul {
   border-radius: 5px;
 }
 
+.card {
+  width: 100%;
+  overflow-x: scroll;
+}
+
+.card::-webkit-scrollbar {
+  width: 0;
+}
+
+.card-items {
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  min-width: 800px;
+  width: 100%;
+}
+
 .circle {
   align-items: center;
   background-color: #ffba33;
-	/* background-color: coral; */
   border-radius: 27px;
   color: #6a4029;
   display: flex;
