@@ -1,4 +1,8 @@
 @media (min-width: 1280px) {
+	/* section.auth-page{
+		background-size: 50%;
+	} */
+	
 	.container {
 		max-width: 1280px;
 	}

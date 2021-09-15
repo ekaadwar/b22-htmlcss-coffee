@@ -1,5 +1,11 @@
+/* width 1024-1279 */
+
 @media (min-width: 1024px) {
-  .title-section {
+  /* section.auth-page{
+		background-size: 65%;
+	} */
+	
+	.title-section {
 		font-size: 36px;
     max-width: 500px;
     text-align: center;

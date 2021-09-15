@@ -3,12 +3,16 @@
 		height: 70px;
 	}
 
+	section.auth-page{
+		background-image: url("../img/picnic200.jpg");
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		/* background-size: auto 100%; */
+		background-size: 50%;
+	}
+
 	section.first{
 		margin-top: 70px;
-	}
-	
-	.container {
-		max-width: 768px;
 	}
 
 	section.jumbotron{
@@ -26,6 +30,20 @@
   section.jumbotron .content {
     align-items: flex-start;
   }
+
+	.auth{
+		width: 50%;
+	}
+
+	.auth-page .wrapper{
+		display: flex;	
+		flex-direction: row;
+		justify-content: flex-end;
+	}
+	
+	.container {
+		max-width: 768px;
+	}
 
   .search-wrapper {
     width: 50%;
