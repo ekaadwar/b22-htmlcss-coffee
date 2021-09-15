@@ -2,8 +2,8 @@ body {
   margin: 0;
 }
 
-a{
-	text-decoration: none;
+a {
+  text-decoration: none;
 }
 
 h1,
@@ -19,58 +19,58 @@ p {
   padding: 0;
 }
 
-footer{
-	background-color: #eee;
-	padding-bottom: 40px;
-	padding-top: 40px;
+footer {
+  background-color: #eee;
+  padding-bottom: 40px;
+  padding-top: 40px;
 }
 
-footer .logo-name{
-	display: inline-block;
+footer .logo-name {
+  display: inline-block;
 }
 
-footer .left-side{
-	margin-bottom: 32px;
+footer .left-side {
+  margin-bottom: 32px;
 }
 
-footer .left-side p{
-	font-weight: bold;
-	margin-bottom: 20px;
-	margin-top: 20px;
-	max-width: 290px;
+footer .left-side p {
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  max-width: 290px;
 }
 
-footer .left-side .account{
-	display: flex;
-	flex-direction: row;
+footer .left-side .account {
+  display: flex;
+  flex-direction: row;
 }
 
-footer .left-side .account .circle{
-	background-color: #6a4029 !important;
-	border-radius: 15px;
-	height: 30px;
-	margin-right: 10px;
-	width: 30px;
+footer .left-side .account .circle {
+  background-color: #6a4029 !important;
+  border-radius: 15px;
+  height: 30px;
+  margin-right: 10px;
+  width: 30px;
 }
 
-footer .right-side{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	max-width: 220px;
-	width: 100%;
+footer .right-side {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 275px;
+  width: 100%;
 }
 
-footer .right-side h4{
-	color : black;
-	margin-bottom: 10px;
+footer .right-side h4 {
+  color: black;
+  margin-bottom: 10px;
 }
 
-footer .wrapper{
-	align-items: flex-start;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+footer .wrapper {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 nav {
@@ -85,6 +85,102 @@ nav {
   z-index: 255;
 }
 
+/**/
+
+/* .wrapper-auth{
+	max-width: 50%;
+} */
+
+section.auth-page {
+  min-height: 100vh;
+  /* background-color: cornsilk; */
+}
+
+.auth-page	.container{
+	height: 100vh;
+}
+
+.auth {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  /* background-color: darkorange; */
+  height: 100%;
+}
+
+.auth nav {
+  /* background-color: aquamarine; */
+  border-width: 0;
+  position: relative;
+}
+
+
+.auth .menu {
+  display: inline-block;
+}
+
+.auth .auth-form {
+  /* background-color: blanchedalmond; */
+  width: 100%;
+  max-width: 400px;
+  position: absolute;
+  top: 25%;
+}
+
+.auth .auth-form .title-section {
+  align-self: center;
+  /* background-color: darkmagenta; */
+  max-width: 100%;
+  color: #6a4029;
+}
+
+.auth .auth-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  /* background-color: darkgray; */
+}
+
+form .form-section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+form .form-section h4{
+	color :#6A4029;
+}
+
+form .form-section .form-label {
+  margin-bottom: 10px;
+}
+
+form .form-section input {
+  align-items: center;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: row;
+  height: 40px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+form .form-section .btn {
+  margin-bottom: 10px;
+}
+
+form .form-section .btn .logo-wrapper{
+	width: 20px;
+	margin-right: 10px;
+}
+
+/*/*/
+
 section.advantages {
   background-color: white;
 }
@@ -95,7 +191,8 @@ section li {
   flex-direction: row;
 }
 
-section p, footer p {
+section p,
+footer p {
   line-height: 30px;
 }
 
@@ -139,14 +236,15 @@ section.favorites button {
 
 section.favorites .card-items {
   align-items: center;
-	border: 1px solid #aaa;
-	height: 600px;
+  border: 1px solid #aaa;
+  height: 600px;
   padding-bottom: 50px;
-	padding-top: 50px;
-	width: 300px;
+  padding-top: 50px;
+  width: 300px;
 }
 
-section.favorites .card-items, section.testimony .card-items {
+section.favorites .card-items,
+section.testimony .card-items {
   border: 1px solid #aaa;
 }
 
@@ -250,40 +348,40 @@ section.partner .image {
   width: 80%;
 }
 
-section.testimony .card-head{
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	margin-bottom: 30px;
+section.testimony .card-head {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 30px;
 }
 
-section.testimony .card-head .info{
-	flex:1;
-	margin-left: 10px;
+section.testimony .card-head .info {
+  flex: 1;
+  margin-left: 10px;
 }
 
-section.testimony .card-head .rating{
-	display: flex;
-	flex-direction: row;
-	align-items: center;
+section.testimony .card-head .rating {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 section.testimony .card-head .rating .material-icons {
-	color : #ffba33;
+  color: #ffba33;
 }
 
 section.testimony .card-items {
   padding: 30px;
-	width: 400px;
-	height: 230px;
+  width: 400px;
+  height: 230px;
 }
 
-section.testimony .card-wrapper{
-	width : 1500px;
+section.testimony .card-wrapper {
+  width: 1500px;
 }
 
-section.testimony .circle{
-	background-color: white;
+section.testimony .circle {
+  background-color: white;
 }
 
 p {
@@ -321,6 +419,12 @@ ul {
   background-color: white;
   border: 1px solid #ffba33;
   color: #6a4029;
+}
+
+.btn-c-shadow{
+	background-color: white;
+	border-width: 0;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
 .btn-c-white:active {
@@ -367,7 +471,7 @@ ul {
   display: flex;
   height: 54px;
   justify-content: center;
-	overflow: hidden;
+  overflow: hidden;
   width: 54px;
 }
 
@@ -378,6 +482,7 @@ ul {
   width: 100%;
   max-width: 500px;
   box-sizing: border-box;
+	/* background-color: darkred; */
 }
 
 .fliying {
@@ -446,6 +551,7 @@ ul {
   margin-top: 0;
   margin-bottom: 0;
   margin-left: 5px;
+  color: #6a4029;
 }
 
 .logo-wrapper {
@@ -485,6 +591,7 @@ ul {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
 }
 
 .search {
@@ -572,9 +679,15 @@ ul {
   width: auto;
 }
 
+.w-full {
+  width: 100%;
+}
+
 .wrapper {
   position: relative;
   width: 100%;
+  height: 100%;
+  /* background-color: darkorchid; */
 }
 
 .wrapper-content {
