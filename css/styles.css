@@ -88,16 +88,42 @@ nav {
 /**/
 
 section.auth-page {
-  height: 100vh	;
-	max-height: 1070px;
-	/* height: 700px; */
-  /* background-color: cornsilk; */
-	z-index: 99;
+  height: 100vh;
+  max-height: 1070px;
 }
 
-section.auth-page	.container{
-	height: 100%;
+section.auth-page .container {
+  height: 100%;
 }
+
+section.forgot-pass .btn {
+  height: 80px;
+}
+
+section.forgot-pass form .btn {
+  margin: 0;
+  flex: 1;
+  /* padding: 0; */
+}
+
+section.forgot-pass form input {
+  height: 80px;
+  flex: 3;
+}
+
+section.forgot-pass form .form-section {
+  display: grid;
+	grid-template-columns: auto auto auto auto;
+	grid-gap: 10px
+}
+
+section.forgot-pass form .form-section input{
+  grid-column: 1/4;
+}
+
+/* section.forgot-pass form .form-section button{
+  grid-column: 1/4;
+} */
 
 .auth {
   display: flex;
@@ -108,12 +134,11 @@ section.auth-page	.container{
 }
 
 .auth nav {
-  /* background-color: aquamarine; */
   border-width: 0;
   position: relative;
-	padding-left: 20px;
-	padding-right: 20px;
-	box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
 }
 
 .auth .menu {
@@ -121,19 +146,17 @@ section.auth-page	.container{
 }
 
 .auth .auth-form {
-  /* background-color: blanchedalmond; */
   width: 100%;
   max-width: 400px;
   position: absolute;
   top: 25%;
-	padding-left: 20px;
-	padding-right: 20px;
-	box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
 }
 
 .auth .auth-form .title-section {
   align-self: center;
-  /* background-color: darkmagenta; */
   max-width: 100%;
   color: #6a4029;
 }
@@ -143,7 +166,6 @@ section.auth-page	.container{
   flex-direction: column;
   align-items: flex-start;
   width: 100%;
-  /* background-color: darkgray; */
 }
 
 form .form-section {
@@ -154,8 +176,8 @@ form .form-section {
   width: 100%;
 }
 
-form .form-section h4{
-	color :#6A4029;
+form .form-section h4 {
+  color: #6a4029;
 }
 
 form .form-section .form-label {
@@ -171,15 +193,16 @@ form .form-section input {
   height: 40px;
   padding-left: 24px;
   padding-right: 24px;
+	box-sizing: border-box;
 }
 
 form .form-section .btn {
   margin-bottom: 10px;
 }
 
-form .form-section .btn .logo-wrapper{
-	width: 20px;
-	margin-right: 10px;
+form .form-section .btn .logo-wrapper {
+  width: 20px;
+  margin-right: 10px;
 }
 
 /*/*/
@@ -296,6 +319,24 @@ section.first {
   margin-top: 50px;
 }
 
+/**/
+
+section.forgot-pass {
+  height: 100vh;
+  background-image: url("../img/cup-coffee300.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  color: white;
+}
+
+.h-full {
+  height: 100%;
+}
+
+/*/*/
+
 section.jumbotron {
   background-attachment: fixed;
   background-image: url("../img/home.png");
@@ -408,6 +449,16 @@ ul {
   padding-right: 24px;
 }
 
+.btn-c-brown {
+  background-color: #6a4029;
+  color: #ffffff;
+}
+
+.btn-c-brown:active {
+  background-color: #ffba33;
+  color: #6a4029;
+}
+
 .btn-c-yellow {
   background-color: #ffba33;
   color: #6a4029;
@@ -424,14 +475,14 @@ ul {
   color: #6a4029;
 }
 
-.btn-c-shadow{
-	background-color: white;
-	border-width: 0;
-	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-}
-
 .btn-c-white:active {
   background-color: #ffba33;
+}
+
+.btn-c-shadow {
+  background-color: white;
+  border-width: 0;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
 .btn-rad-full {
@@ -478,6 +529,52 @@ ul {
   width: 54px;
 }
 
+/* margin property */
+.my-1 {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.my-2 {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+/* end of margin property */
+
+/* width property */
+.w-full {
+  width: 100%;
+}
+/* end of width property */
+
+/* text property */
+.text-center {
+  text-align: center;
+}
+/* end of text property */
+
+/* flex property */
+.flex {
+  display: flex;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.items-center {
+  align-items: center;
+}
+/* end of flex property */
+
 .container {
   margin: 0 auto;
   padding-left: 5px;
@@ -485,7 +582,7 @@ ul {
   width: 100%;
   max-width: 500px;
   box-sizing: border-box;
-	/* background-color: darkred; */
+  /* background-color: darkred; */
 }
 
 .fliying {
@@ -687,11 +784,9 @@ ul {
 }
 
 .wrapper {
-	height: 100%;
-	position: relative;
+  height: 100%;
+  position: relative;
   width: 100%;
-
-  /* background-color: darkorchid; */
 }
 
 .wrapper-content {
