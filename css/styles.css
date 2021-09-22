@@ -74,10 +74,14 @@ footer .wrapper {
 }
 
 nav {
-  background-color: #fff;
-  height: 50px;
   display: flex;
   align-items: center;
+  height: 50px;
+  /* background-color: whitesmoke; */
+}
+
+nav.main {
+  background-color: #fff;
   border-bottom: 1px solid silver;
   position: fixed;
   top: 0;
@@ -149,7 +153,7 @@ section.product .left-side .coupon {
   display: flex;
   flex-direction: row;
   align-items: center;
-	margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 section.product .left-side .coupon-body {
@@ -202,8 +206,8 @@ section.product .coupon-accesories2 {
   height: 300px;
 }
 
-section.product .left-side .btn{
-	width: 80% !important;
+section.product .left-side .btn {
+  width: 80% !important;
 }
 
 section.product .wrapper {
@@ -228,14 +232,64 @@ section.product .left-side {
   justify-content: space-between;
 }
 
-section.product .left-side ul{
-	list-style-type: decimal ;
+section.product .left-side ul {
+  list-style-type: decimal;
 }
 
 section.product .right-side {
   background-color: burlywood;
   flex: 3;
+  padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 100px;
 }
+
+section.product .right-side nav .nav-content {
+  justify-content: center;
+}
+
+section.product .right-side nav .nav-content .menu {
+  width: 100%;
+}
+
+section.product .right-side nav .nav-content .menu ul {
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+section.product .right-side .content{
+	background-color: thistle;
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+}
+
+section.product .right-side .content .content-item{
+	background-color: violet;
+	display: flex;
+	justify-content: center;
+}
+
+section.product .canvas{
+	background-color: #ffffff;
+	width: 150px;
+	height: 220px;
+	position: relative;
+	box-shadow: 0 0 10px #999;
+	border-radius: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 50px;
+	margin-top: 50px;
+	box-sizing: border-box;
+}
+
+section.product .canvas .circle{
+	position: absolute;
+	top:-50px;
+}
+
+
 
 .auth {
   display: flex;
