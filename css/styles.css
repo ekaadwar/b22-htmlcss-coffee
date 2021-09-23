@@ -132,7 +132,6 @@ section.forgot-pass form .form-section input {
 section.product {
   height: 100vh;
   overflow-y: scroll;
-  background-color: bisque;
 }
 
 section.product::-webkit-scrollbar {
@@ -223,7 +222,6 @@ section.product .left-side .wrapper {
 }
 
 section.product .left-side {
-  background-color: beige;
   flex: 1;
   padding: 20px;
   height: 850px;
@@ -237,11 +235,12 @@ section.product .left-side ul {
 }
 
 section.product .right-side {
-  background-color: burlywood;
   flex: 3;
   padding-top: 20px;
 	padding-bottom: 20px;
 	padding-left: 100px;
+	border-left: 1px solid silver;
+	height : 100%;
 }
 
 section.product .right-side nav .nav-content {
@@ -258,13 +257,13 @@ section.product .right-side nav .nav-content .menu ul {
 }
 
 section.product .right-side .content{
-	background-color: thistle;
 	display: grid;
 	grid-template-columns: auto auto auto auto;
+	gap : 20px;
+	margin-top: 30px;
 }
 
 section.product .right-side .content .content-item{
-	background-color: violet;
 	display: flex;
 	justify-content: center;
 }
@@ -272,24 +271,32 @@ section.product .right-side .content .content-item{
 section.product .canvas{
 	background-color: #ffffff;
 	width: 150px;
-	height: 220px;
+	height: 200px;
 	position: relative;
 	box-shadow: 0 0 10px #999;
 	border-radius: 30px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding-top: 50px;
+	padding: 50px 10px 10px;
 	margin-top: 50px;
 	box-sizing: border-box;
+	
+}
+
+section.product .canvas .canvas-content{
+	flex : 1;
+	padding: 20px 0 ;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	text-align: center;
 }
 
 section.product .canvas .circle{
 	position: absolute;
 	top:-50px;
 }
-
-
 
 .auth {
   display: flex;
