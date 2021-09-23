@@ -237,10 +237,10 @@ section.product .left-side ul {
 section.product .right-side {
   flex: 3;
   padding-top: 20px;
-	padding-bottom: 20px;
-	padding-left: 100px;
-	border-left: 1px solid silver;
-	height : 100%;
+  padding-bottom: 20px;
+  padding-left: 100px;
+  border-left: 1px solid silver;
+  height: 100%;
 }
 
 section.product .right-side nav .nav-content {
@@ -256,46 +256,53 @@ section.product .right-side nav .nav-content .menu ul {
   box-sizing: border-box;
 }
 
-section.product .right-side .content{
-	display: grid;
-	grid-template-columns: auto auto auto auto;
-	gap : 20px;
-	margin-top: 30px;
+section.product .right-side .content {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 20px;
+  margin-top: 30px;
 }
 
-section.product .right-side .content .content-item{
-	display: flex;
-	justify-content: center;
+section.product .right-side .content .content-item {
+  display: flex;
+  justify-content: center;
 }
 
-section.product .canvas{
-	background-color: #ffffff;
-	width: 150px;
-	height: 200px;
-	position: relative;
-	box-shadow: 0 0 10px #999;
-	border-radius: 30px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding: 50px 10px 10px;
-	margin-top: 50px;
-	box-sizing: border-box;
-	
+section.product .canvas {
+  background-color: #ffffff;
+  width: 150px;
+  height: 200px;
+  position: relative;
+  box-shadow: 0 0 10px #999;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 10px 10px;
+  margin-top: 50px;
+  box-sizing: border-box;
 }
 
-section.product .canvas .canvas-content{
-	flex : 1;
-	padding: 20px 0 ;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	text-align: center;
+section.product .canvas h3 {
+  color: black;
 }
 
-section.product .canvas .circle{
-	position: absolute;
-	top:-50px;
+section.product .canvas p{
+	color : #6A4029;
+}
+
+section.product .canvas .canvas-content {
+  flex: 1;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+section.product .canvas .circle {
+  position: absolute;
+  top: -50px;
 }
 
 .auth {
