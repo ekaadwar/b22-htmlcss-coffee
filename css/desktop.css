@@ -1,13 +1,35 @@
 @media (min-width: 1280px) {
-	/* section.auth-page{
-		background-size: 50%;
-	} */
-	
-	.container {
-		max-width: 1280px;
-	}
+  section.product .canvas {
+    width: 150px;
+    height: 200px;
+    padding: 50px 10px 10px;
+  }
 
-	.search-wrapper {
+  section.product .canvas h3 {
+    color: black;
+    font-size: 18px;
+  }
+
+  section.product .right-side {
+    border-left: 1px solid silver;
+    flex: 3;
+    padding-left: 100px;
+  }
+
+  section.product .right-side .content {
+    grid-template-columns: auto auto auto auto;
+    margin-top: 30px;
+  }
+
+  section.product .right-side .content a:nth-child(n + 9) {
+    display: inline;
+  }
+
+  .container {
+    max-width: 1280px;
+  }
+
+  .search-wrapper {
     width: 30%;
   }
 }

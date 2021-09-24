@@ -73,286 +73,11 @@ footer .wrapper {
   justify-content: space-between;
 }
 
-nav {
-  display: flex;
-  align-items: center;
-  height: 50px;
-  /* background-color: whitesmoke; */
-}
-
-nav.main {
-  background-color: #fff;
-  border-bottom: 1px solid silver;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 255;
-}
-
-/**/
-
-section {
-  box-sizing: border-box;
-}
-
-section.auth-page {
-  height: 100vh;
-  max-height: 1070px;
-}
-
-section.auth-page .container {
-  height: 100%;
-}
-
-section.forgot-pass .btn {
-  height: 80px;
-}
-
-section.forgot-pass form .btn {
-  margin: 0;
-  flex: 1;
-  /* padding: 0; */
-}
-
-section.forgot-pass form input {
-  height: 80px;
-  flex: 3;
-}
-
-section.forgot-pass form .form-section {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  grid-gap: 10px;
-}
-
-section.forgot-pass form .form-section input {
-  grid-column: 1/4;
-}
-
-section.product {
-  height: 100vh;
-  overflow-y: scroll;
-}
-
-section.product::-webkit-scrollbar {
-  width: 0;
-}
-
-section.product .left-side .title-side {
-  color: #6a4029;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-section.product .left-side .title-sub-side {
-  text-align: center;
-}
-
-section.product .left-side .coupon {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-section.product .left-side .coupon-body {
-  background-color: #ffcb65;
-  width: 80%;
-  border-radius: 20px;
-  height: 400px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  box-sizing: border-box;
-  text-align: center;
-}
-
-section.product .left-side .coupon-body .top-section {
-  border-bottom: 1px dashed #000;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex: 2;
-  justify-content: space-between;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-section.product .left-side .coupon-body .bottom-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex: 1;
-  justify-content: space-between;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-section.product .coupon-accesories1,
-section.product .coupon-accesories2 {
-  width: 8%;
-  border-top-right-radius: 9999px;
-  border-bottom-right-radius: 9999px;
-}
-
-section.product .coupon-accesories1 {
-  background-color: #000;
-  height: 350px;
-}
-
-section.product .coupon-accesories2 {
-  background-color: #895537;
-  height: 300px;
-}
-
-section.product .left-side .btn {
-  width: 80% !important;
-}
-
-section.product .wrapper {
-  display: flex;
-  box-sizing: border-box;
-}
-
-section.product .left-side .wrapper {
-  flex-direction: column;
-  align-items: center;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-section.product .left-side {
-  flex: 1;
-  padding: 20px;
-  height: 850px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-section.product .left-side ul {
-  list-style-type: decimal;
-}
-
-section.product .right-side {
-  flex: 3;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 100px;
-  border-left: 1px solid silver;
-  height: 100%;
-}
-
-section.product .right-side nav .nav-content {
-  justify-content: center;
-}
-
-section.product .right-side nav .nav-content .menu {
-  width: 100%;
-}
-
-section.product .right-side nav .nav-content .menu ul {
-  justify-content: space-between;
-  box-sizing: border-box;
-}
-
-section.product .right-side .content {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  gap: 20px;
-  margin-top: 30px;
-}
-
-section.product .right-side .content .content-item {
-  display: flex;
-  justify-content: center;
-}
-
-section.product .canvas {
-  background-color: #ffffff;
-  width: 150px;
-  height: 200px;
-  position: relative;
-  box-shadow: 0 0 10px #999;
-  border-radius: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 50px 10px 10px;
-  margin-top: 50px;
-  box-sizing: border-box;
-}
-
-section.product .canvas h3 {
-  color: black;
-}
-
-section.product .canvas p{
-	color : #6A4029;
-}
-
-section.product .canvas .canvas-content {
-  flex: 1;
-  padding: 20px 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  text-align: center;
-}
-
-section.product .canvas .circle {
-  position: absolute;
-  top: -50px;
-}
-
-.auth {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-  height: 100%;
-}
-
-.auth nav {
-  border-width: 0;
-  position: relative;
-  padding-left: 20px;
-  padding-right: 20px;
-  box-sizing: border-box;
-}
-
-.auth .menu {
-  display: inline-block;
-}
-
-.auth .auth-form {
-  width: 100%;
-  max-width: 400px;
-  position: absolute;
-  top: 25%;
-  padding-left: 20px;
-  padding-right: 20px;
-  box-sizing: border-box;
-}
-
-.auth .auth-form .title-section {
-  align-self: center;
-  max-width: 100%;
-  color: #6a4029;
-}
-
-.auth .auth-form form {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  width: 100%;
-}
-
 form .form-section {
   display: flex;
   flex-direction: column;
-  margin-top: 10px;
   margin-bottom: 10px;
+  margin-top: 10px;
   width: 100%;
 }
 
@@ -368,12 +93,12 @@ form .form-section input {
   align-items: center;
   border-radius: 5px;
   border: 1px solid #ccc;
+  box-sizing: border-box;
   display: flex;
   flex-direction: row;
   height: 40px;
   padding-left: 24px;
   padding-right: 24px;
-  box-sizing: border-box;
 }
 
 form .form-section .btn {
@@ -381,14 +106,70 @@ form .form-section .btn {
 }
 
 form .form-section .btn .logo-wrapper {
-  width: 20px;
   margin-right: 10px;
+  width: 20px;
 }
 
-/*/*/
+nav {
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
 
-section.advantages {
-  background-color: white;
+nav.main {
+  background-color: #fff;
+  border-bottom: 1px solid silver;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 255;
+}
+
+section {
+  box-sizing: border-box;
+}
+
+section.auth-page {
+  height: 100vh;
+  max-height: 1070px;
+}
+
+section.auth-page .container {
+  height: 100%;
+}
+
+section.forgot-pass {
+  background-attachment: fixed;
+  background-image: url("../img/cup-coffee300.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  height: 100vh;
+  position: relative;
+}
+
+section.forgot-pass form input {
+  height: 80px;
+  flex: 3;
+}
+
+section.forgot-pass form .btn {
+  margin: 0;
+  flex: 1;
+}
+
+section.forgot-pass form .form-section {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+}
+
+section.forgot-pass form .form-section input {
+  grid-column: 1/4;
+}
+
+section.forgot-pass .btn {
+  height: 80px;
 }
 
 section li {
@@ -413,13 +194,6 @@ section.advantages .image {
 
 section.advantages .wrapper-image {
   display: none;
-}
-
-section.jumbotron ul li .material-icons {
-  color: #2fab73;
-  font-size: 14px;
-  margin-right: 10px;
-  padding-top: 8px;
 }
 
 section.advantages .wrapper-data {
@@ -499,24 +273,6 @@ section.first {
   margin-top: 50px;
 }
 
-/**/
-
-section.forgot-pass {
-  height: 100vh;
-  background-image: url("../img/cup-coffee300.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  position: relative;
-  color: white;
-}
-
-.h-full {
-  height: 100%;
-}
-
-/*/*/
-
 section.jumbotron {
   background-attachment: fixed;
   background-image: url("../img/home.png");
@@ -528,12 +284,11 @@ section.jumbotron {
   padding-bottom: 75px;
 }
 
-section.jumbotron .searching {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding-top: 20px;
-  width: 100%;
+section.jumbotron ul li .material-icons {
+  color: #2fab73;
+  font-size: 14px;
+  margin-right: 10px;
+  padding-top: 8px;
 }
 
 section.jumbotron .container {
@@ -546,6 +301,14 @@ section.jumbotron .content {
   flex-direction: column;
   justify-content: space-between;
   margin-top: 60px;
+  width: 100%;
+}
+
+section.jumbotron .searching {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 20px;
   width: 100%;
 }
 
@@ -570,6 +333,197 @@ section.testimony {
 section.partner .image {
   max-width: 150px;
   width: 80%;
+}
+
+section.product {
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+section.product::-webkit-scrollbar {
+  width: 0;
+}
+
+section.product .canvas {
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 30px;
+  box-shadow: 0 0 10px #999;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 175px;
+  margin-top: 50px;
+  padding: 50px 10px 0;
+  position: relative;
+  width: 120px;
+}
+
+section.product .canvas h3 {
+  color: black;
+	font-size: 16px;
+}
+
+section.product .canvas p {
+  color: #6a4029;
+}
+
+section.product .canvas .canvas-content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 0;
+  text-align: center;
+}
+
+section.product .canvas .circle {
+  position: absolute;
+  top: -50px;
+}
+
+section.product .coupon-accesories1,
+section.product .coupon-accesories2 {
+  width: 8%;
+  border-top-right-radius: 9999px;
+  border-bottom-right-radius: 9999px;
+}
+
+section.product .coupon-accesories1 {
+  background-color: #000;
+  height: 350px;
+}
+
+section.product .coupon-accesories2 {
+  background-color: #895537;
+  height: 300px;
+}
+
+section.product .left-side {
+  display: none;
+  flex: 1;
+  flex-direction: column;
+  height: 850px;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+section.product .left-side ul {
+  list-style-type: decimal;
+}
+
+section.product .left-side .btn {
+  width: 80% !important;
+}
+
+section.product .left-side .coupon {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+section.product .left-side .coupon-body {
+  align-items: center;
+  background-color: #ffcb65;
+  border-radius: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  text-align: center;
+  width: 80%;
+}
+
+section.product .left-side .coupon-body .top-section {
+  align-items: center;
+  border-bottom: 1px dashed #000;
+  display: flex;
+  flex: 2;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+section.product .left-side .coupon-body .bottom-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+section.product .left-side .title-side {
+  color: #6a4029;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+section.product .left-side .title-sub-side {
+  text-align: center;
+}
+
+section.product .left-side .wrapper {
+  align-items: center;
+  flex-direction: column;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+section.product .right-side {
+  height: 100%;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  flex: 1;
+}
+
+section.product .right-side nav .nav-content {
+	/* background-color:darkgrey; */
+	width : 100%;
+	max-width: px;
+	overflow: scroll;
+}
+
+section.product .right-side nav .nav-content::-webkit-scrollbar{
+	width: 0;
+}
+
+section.product .right-side nav .nav-content .menu {
+  width: 100%;
+	/* display: inline-block; */
+	min-width: 500px;
+}
+
+section.product .right-side nav .nav-content .menu ul {
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+
+section.product .right-side .content {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px;
+}
+
+section.product .right-side .content a:nth-child(n+9) {
+  display: none;
+}
+
+section.product .right-side .content .content-item {
+  display: flex;
+  justify-content: center;
+}
+
+section.product .wrapper {
+  box-sizing: border-box;
+  display: flex;
+}
+
+section.advantages {
+  background-color: white;
 }
 
 section.testimony .card-head {
@@ -614,6 +568,49 @@ p {
 
 ul {
   list-style-type: none;
+}
+
+.auth {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+}
+
+.auth nav {
+  border-width: 0;
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+}
+
+.auth .menu {
+  display: inline-block;
+}
+
+.auth .auth-form {
+  box-sizing: border-box;
+  max-width: 400px;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: absolute;
+  top: 25%;
+  width: 100%;
+}
+
+.auth .auth-form .title-section {
+  align-self: center;
+  color: #6a4029;
+  max-width: 100%;
+}
+
+.auth .auth-form form {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .btn {
@@ -736,6 +733,10 @@ ul {
 .circle-big {
   height: 100px;
   width: 100px;
+}
+
+.h-full {
+  height: 100%;
 }
 
 /* margin property */
@@ -1000,9 +1001,9 @@ ul {
 }
 
 .wrapper-content {
+  align-items: center;
   display: flex;
   flex-direction: row;
-  align-items: center;
   margin-top: 20px;
 }
 
@@ -1011,9 +1012,9 @@ ul {
 }
 
 .wrapper-image {
+  align-items: center;
   display: flex;
   flex: 1;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
 }

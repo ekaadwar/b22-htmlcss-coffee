@@ -1,25 +1,27 @@
+/* for display 768px-1024px */
+
 @media (min-width: 768px) {
-	nav.main{
-		height: 70px;
-	}
+  nav.main {
+    height: 70px;
+  }
 
-	section.auth-page{
-		background-image: url("../img/picnic200.jpg");
-		background-repeat: no-repeat;
-		background-attachment: fixed;
-		/* background-size: auto 100%; */
-		background-size: 50%;
-	}
+  section.auth-page {
+    background-image: url("../img/picnic200.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* background-size: auto 100%; */
+    background-size: 50%;
+  }
 
-	section.first{
-		margin-top: 70px;
-	}
+  section.first {
+    margin-top: 70px;
+  }
 
-	section.jumbotron{
-		background-position: center 70px;
-	}
+  section.jumbotron {
+    background-position: center 70px;
+  }
 
-	section.jumbotron .searching {
+  section.jumbotron .searching {
     justify-content: flex-end;
   }
 
@@ -31,19 +33,31 @@
     align-items: flex-start;
   }
 
-	.auth{
-		width: 50%;
-	}
+  section.product .right-side .content {
+    grid-template-columns: auto auto auto auto;
+  }
 
-	.auth-page .wrapper{
-		display: flex;	
-		flex-direction: row;
-		justify-content: flex-end;
-	}
-	
-	.container {
-		max-width: 768px;
-	}
+  section.product .right-side .content a:nth-child(n + 10) {
+    display: inline;
+  }
+
+  section.product .right-side .content a:nth-child(n + 13) {
+    display: none;
+  }
+
+  .auth {
+    width: 50%;
+  }
+
+  .auth-page .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .container {
+    max-width: 768px;
+  }
 
   .search-wrapper {
     width: 50%;

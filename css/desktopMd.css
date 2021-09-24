@@ -1,12 +1,16 @@
-/* width 1024-1279 */
+/* width 1024px-1279px */
 
 @media (min-width: 1024px) {
-  /* section.auth-page{
-		background-size: 65%;
-	} */
-	
-	.title-section {
-		font-size: 36px;
+  section.product .left-side {
+    display: flex;
+  }
+
+	section.product .right-side {
+  flex: 2;
+}
+
+  .title-section {
+    font-size: 36px;
     max-width: 500px;
     text-align: center;
     line-height: 40px;
