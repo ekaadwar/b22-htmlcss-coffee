@@ -129,6 +129,10 @@ section {
   box-sizing: border-box;
 }
 
+section.advantages {
+  background-color: white;
+}
+
 section.auth-page {
   height: 100vh;
   max-height: 1070px;
@@ -335,12 +339,14 @@ section.partner .image {
   width: 80%;
 }
 
-section.product {
+section.product,
+section.product-detail {
   height: 100vh;
   overflow-y: scroll;
 }
 
-section.product::-webkit-scrollbar {
+section.product::-webkit-scrollbar,
+section.product-detail::-webkit-scrollbar {
   width: 0;
 }
 
@@ -361,7 +367,7 @@ section.product .canvas {
 
 section.product .canvas h3 {
   color: black;
-	font-size: 16px;
+  font-size: 16px;
 }
 
 section.product .canvas p {
@@ -481,20 +487,20 @@ section.product .right-side {
 }
 
 section.product .right-side nav .nav-content {
-	/* background-color:darkgrey; */
-	width : 100%;
-	max-width: px;
-	overflow: scroll;
+  /* background-color:darkgrey; */
+  width: 100%;
+  max-width: px;
+  overflow: scroll;
 }
 
-section.product .right-side nav .nav-content::-webkit-scrollbar{
-	width: 0;
+section.product .right-side nav .nav-content::-webkit-scrollbar {
+  width: 0;
 }
 
 section.product .right-side nav .nav-content .menu {
   width: 100%;
-	/* display: inline-block; */
-	min-width: 500px;
+  /* display: inline-block; */
+  min-width: 500px;
 }
 
 section.product .right-side nav .nav-content .menu ul {
@@ -508,7 +514,7 @@ section.product .right-side .content {
   gap: 20px;
 }
 
-section.product .right-side .content a:nth-child(n+9) {
+section.product .right-side .content a:nth-child(n + 9) {
   display: none;
 }
 
@@ -522,8 +528,94 @@ section.product .wrapper {
   display: flex;
 }
 
-section.advantages {
-  background-color: white;
+section.product-detail .card-items {
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+section.product-detail .content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+section.product-detail form .form-section {
+  flex-direction: row;
+  align-items: center;
+}
+
+section.product-detail form .form-section input {
+  flex: 1;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+}
+
+section.product-detail .amount{
+	margin-top: 100px;
+}
+
+section.product-detail .amount-detail{
+	display: flex;
+}
+
+section.product-detail .amount-data{
+	margin-left: 20px;
+}
+
+section.product-detail .amount-input{
+	display: flex;
+	align-items: center;
+}
+
+section.product-detail .amount-input .value{
+	margin: 0 20px;
+}
+
+section.product-detail .left-side {
+  flex: 2;
+  height: 600px;
+}
+
+section.product-detail .left-side .content {
+  justify-content: space-around;
+  padding: 0 50px;
+}
+
+section.product-detail .right-side {
+  flex: 3;
+}
+
+section.product-detail{
+	padding-bottom: 100px;
+}
+
+section.product-detail .wrapper-content {
+  align-items: flex-start;
+}
+
+section.product-detail .wrapper-content .card-wrapper {
+  flex: 3;
+	height: 120px;
+}
+
+section.product-detail .wrapper-content .card-wrapper .card-items{
+	flex-direction: row;
+	width: 90%;
+	padding : 25px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+section.product-detail .wrapper-content .button-wrapper {
+  flex: 1;
+	height: 120px;
+}
+
+section.product-detail .wrapper-content .btn{
+	height: 100%;
 }
 
 section.testimony .card-head {
@@ -613,6 +705,39 @@ ul {
   width: 100%;
 }
 
+/* background property */
+.bg-brown {
+  background-color: #6a4029;
+  color: #ffffff;
+}
+
+.bg-brown:active {
+  background-color: #ffba33;
+  color: #6a4029;
+}
+
+.bg-yellow {
+  background-color: #ffba33;
+  color: #6a4029;
+}
+
+.bg-yellow:active {
+  background-color: #6a4029;
+  color: #fff;
+}
+
+.bg-white {
+  background-color: white;
+  border: 1px solid #ffba33;
+  color: #6a4029;
+}
+
+.bg-white:active {
+  background-color: #ffba33;
+}
+/* end of background property */
+
+/* button porperty */
 .btn {
   align-items: center;
   border-width: 0;
@@ -662,13 +787,30 @@ ul {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
+.btn-c-shadow:active {
+  background-color: white;
+  background-color: #6a4029;
+  color: white;
+}
+
 .btn-rad-full {
-  border-radius: 20px;
+  border-radius: 9999px;
 }
 
 .btn-rad-square {
   border-radius: 5px;
 }
+/* end of button porperty */
+
+/* border radius property */
+.round-full {
+  border-radius: 9999px;
+}
+
+.round-md {
+  border-radius: 5px;
+}
+/* end of border radius property */
 
 .card {
   width: 100%;
@@ -696,9 +838,7 @@ ul {
 
 .circle {
   align-items: center;
-  background-color: #ffba33;
   border-radius: 9999px;
-  color: #6a4029;
   display: flex;
   justify-content: center;
   overflow: hidden;
@@ -731,9 +871,39 @@ ul {
 }
 
 .circle-big {
-  height: 100px;
-  width: 100px;
+  height: 300px;
+  width: 300px;
 }
+
+/* flex property */
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.item-center {
+  align-items: center;
+}
+
+.item-start {
+  align-items: flex-start;
+}
+/* end of flex property */
 
 .h-full {
   height: 100%;
@@ -749,6 +919,42 @@ ul {
   margin-bottom: 20px;
   margin-top: 20px;
 }
+
+.my-3 {
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.my-4 {
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.mx-1 {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.mx-2 {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.mb-1 {
+  margin-bottom: 10px;
+}
+
+.mb-2 {
+  margin-bottom: 20px;
+}
+
+.mb-3 {
+  margin-bottom: 30px;
+}
+
+.mb-4 {
+  margin-bottom: 40px;
+}
 /* end of margin property */
 
 /* width property */
@@ -758,8 +964,20 @@ ul {
 /* end of width property */
 
 /* text property */
+.text-bold {
+  font-weight: bold;
+}
+
 .text-center {
   text-align: center;
+}
+
+.text-brown {
+  color: #6a4029;
+}
+
+.text-grey {
+  color: #4f5665;
 }
 /* end of text property */
 
@@ -905,6 +1123,24 @@ ul {
   width: 100%;
 }
 
+/* box sizing property */
+.box {
+  box-sizing: border-box;
+}
+/* ed of box sizing property */
+
+/* Padding Property */
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.px-20 {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+/* End of Padding Property */
+
 .search {
   height: 40px;
   border-radius: 20px;
@@ -935,6 +1171,10 @@ ul {
 
 .shadow-box-yellow {
   box-shadow: 0 0 20px #ffba33;
+}
+
+.shadow-box-grey {
+  box-shadow: 0 0 20px #aaaaaa;
 }
 
 .text-secondary {
@@ -1004,7 +1244,6 @@ ul {
   align-items: center;
   display: flex;
   flex-direction: row;
-  margin-top: 20px;
 }
 
 .wrapper-data {
