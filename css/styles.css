@@ -209,6 +209,92 @@ section.advantages .wrapper {
   padding-top: 100px;
 }
 
+section.cart {
+  min-height: 100vh;
+  background-image: url("../img/coffeInGlass.jpg");
+  background-attachment: fixed;
+  background-position: center 60%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+	padding: 40px 0;
+}
+
+section.cart .card-items {
+  color: #000;
+  padding: 40px;
+}
+
+section.cart .cart-product {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  row-gap: 20px;
+}
+
+section.cart .cart-product .cart-detail {
+  grid-column: 2/5;
+}
+
+section.cart .cart-product .price p {
+  text-align: right;
+}
+
+section.cart .detail-price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+section.cart .left-side {
+  flex: 1;
+}
+
+section.cart .left-side h2 {
+  text-align: center;
+  color: #362115;
+}
+
+section.cart .left-side .card-items section {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+section.cart .left-content {
+  width: 100%;
+  padding-right: 100px;
+  box-sizing: border-box;
+}
+
+section.cart .right-side {
+  flex: 1;
+  padding-left: 100px;
+  box-sizing: border-box;
+}
+
+section.cart .right-content {
+  width: 100%;
+  padding-left: 100px;
+  box-sizing: border-box;
+}
+
+section.cart .right-side .card-items .card-section {
+  border-bottom: 1px solid silver;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+section.cart .total-price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+section.cart .total-price p {
+  color: #362115;
+  font-weight: bold;
+  font-size: 20px;
+}
+
 section.favorites {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -553,25 +639,25 @@ section.product-detail form .form-section input {
   border-right: 0;
 }
 
-section.product-detail .amount{
-	margin-top: 100px;
+section.product-detail .amount {
+  margin-top: 100px;
 }
 
-section.product-detail .amount-detail{
-	display: flex;
+section.product-detail .amount-detail {
+  display: flex;
 }
 
-section.product-detail .amount-data{
-	margin-left: 20px;
+section.product-detail .amount-data {
+  margin-left: 20px;
 }
 
-section.product-detail .amount-input{
-	display: flex;
-	align-items: center;
+section.product-detail .amount-input {
+  display: flex;
+  align-items: center;
 }
 
-section.product-detail .amount-input .value{
-	margin: 0 20px;
+section.product-detail .amount-input .value {
+  margin: 0 20px;
 }
 
 section.product-detail .left-side {
@@ -588,8 +674,8 @@ section.product-detail .right-side {
   flex: 3;
 }
 
-section.product-detail{
-	padding-bottom: 100px;
+section.product-detail {
+  padding-bottom: 100px;
 }
 
 section.product-detail .wrapper-content {
@@ -598,24 +684,24 @@ section.product-detail .wrapper-content {
 
 section.product-detail .wrapper-content .card-wrapper {
   flex: 3;
-	height: 120px;
+  height: 120px;
 }
 
-section.product-detail .wrapper-content .card-wrapper .card-items{
-	flex-direction: row;
-	width: 90%;
-	padding : 25px;
-	justify-content: space-between;
-	align-items: center;
+section.product-detail .wrapper-content .card-wrapper .card-items {
+  flex-direction: row;
+  width: 90%;
+  padding: 25px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 section.product-detail .wrapper-content .button-wrapper {
   flex: 1;
-	height: 120px;
+  height: 120px;
 }
 
-section.product-detail .wrapper-content .btn{
-	height: 100%;
+section.product-detail .wrapper-content .btn {
+  height: 100%;
 }
 
 section.testimony .card-head {
@@ -735,6 +821,17 @@ ul {
 .bg-white:active {
   background-color: #ffba33;
 }
+
+.bg-orange {
+  background-color: #f47b0a;
+  color: white;
+}
+
+.bg-orange:active {
+  background-color: #a65307;
+}
+
+
 /* end of background property */
 
 /* button porperty */
@@ -836,6 +933,7 @@ ul {
   width: 100%;
 }
 
+/* circle property */
 .circle {
   align-items: center;
   border-radius: 9999px;
@@ -874,6 +972,7 @@ ul {
   height: 300px;
   width: 300px;
 }
+/* end of circle property */
 
 /* flex property */
 .flex {
@@ -1139,6 +1238,11 @@ ul {
   padding-left: 5rem;
   padding-right: 5rem;
 }
+
+.py-10 {
+  padding-bottom: 2.5rem;
+  padding-top: 2.5rem;
+}
 /* End of Padding Property */
 
 .search {
@@ -1176,6 +1280,47 @@ ul {
 .shadow-box-grey {
   box-shadow: 0 0 20px #aaaaaa;
 }
+
+/* square property */
+.square {
+  align-items: center;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  width: 54px;
+}
+
+.square-xs {
+  height: 30px;
+  width: 30px;
+}
+
+.square-sm {
+  height: 40px;
+  width: 40px;
+}
+
+.square-md {
+  height: 60px;
+  width: 60px;
+}
+
+.square-lg {
+  height: 80px;
+  width: 80px;
+}
+
+.square-xl {
+  height: 100px;
+  width: 100px;
+}
+
+.square-big {
+  height: 300px;
+  width: 300px;
+}
+/* end of square property */
 
 .text-secondary {
   color: #4f5665;

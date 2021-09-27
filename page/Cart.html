@@ -28,8 +28,9 @@
 		<link rel="stylesheet" href="../css/desktopMd.css" />
 		<link rel="stylesheet" href="../css/desktop.css" />
 
-		<title>Product</title>
+		<title>Your Cart</title>
 	</head>
+
 	<body>
 		<div class="font-rubik">
 			<nav class="main">
@@ -83,133 +84,130 @@
 				</div>
 			</nav>
 
-			<section class="product-detail first font-poppins">
+			<section class="cart first">
 				<div class="container">
-					<div>
-						<p class="text-bold">
-							<span class="text-grey">Favorite & Promo </span
-							><span class="text-brown">> Cold Brew</span>
-						</p>
-					</div>
-
+					<h2 class="shadow py-10">Checkout your<br />item now!</h2>
 					<div class="wrapper-content">
 						<div class="left-side">
-							<div class="content">
-								<div class="circle circle-big">
-									<img
-										class="image"
-										src="../img/coldBrew.png"
-										alt="Cold Brew"
-									/>
-								</div>
+							<div class="left-content">
+								<div class="card-items">
+									<section>
+										<h2>Order Summary</h2>
+									</section>
 
-								<div class="text-center">
-									<h1 class="title-main">Cold Brew</h1>
-									<h2>IDR 30.000</h2>
-								</div>
+									<section class="cart-product">
+										<div class="cart-image square square-md bg-yellow">
+											<img
+												class="image"
+												src="../img/hazelnutLatte.png"
+												alt="hazelnut Latte"
+											/>
+										</div>
 
-								<div class="w-full">
-									<button class="btn btn-square bg-brown round-md w-full mb-1">
-										Add Cart
-									</button>
-									<button class="btn btn-square bg-yellow round-md w-full">
-										Ask a Staff
-									</button>
+										<div class="cart-detail">
+											<p>Hazelnut Latte x1</p>
+											<p>Regular</p>
+										</div>
+
+										<div class="price"><p>IDR 24.0</p></div>
+
+										<div class="square square-md bg-yellow">
+											<img
+												class="image"
+												src="../img/fireChickenWing.png"
+												alt="Fire Chicken Wing"
+											/>
+										</div>
+
+										<div class="cart-detail">
+											<p>Chicken Fire Wing x2</p>
+										</div>
+
+										<div class="price"><p>IDR 30.0</p></div>
+									</section>
+
+									<section>
+										<div class="detail-price">
+											<p>SUB TOTAL</p>
+											<p>IDR 120.000</p>
+										</div>
+
+										<div class="detail-price">
+											<p>SUB TOTAL</p>
+											<p>IDR 120.000</p>
+										</div>
+
+										<div class="detail-price">
+											<p>SUB TOTAL</p>
+											<p>IDR 120.000</p>
+										</div>
+									</section>
+
+									<section class="total-price">
+										<p>TOTAL</p>
+										<p>IDR 150.000</p>
+									</section>
 								</div>
 							</div>
 						</div>
 
 						<div class="right-side">
-							<div class="content">
-								<div class="card-items w-full shadow-box-grey mb-4">
-									<p class="text-brown">
-										Delivery only on
-										<span class="text-bold">Monday to friday</span> at
-										<span>1 - 7 pm</span>
-									</p>
-
-									<p class="text-brown my-3">
-										Cold brewing is a method of brewing that combines ground
-										coffee and cool water and uses time instead of heat to
-										extract the flavor. It is brewed in small batches and
-										steeped for as long as 48 hours.
-									</p>
-
-									<div>
-										<h3 class="text-center mb-1">Choose a size</h3>
-										<div class="flex justify-center">
-											<div class="circle circle-md bg-yellow"><h2>R</h2></div>
-											<div class="circle circle-md bg-yellow mx-2">
-												<h2>L</h2>
-											</div>
-											<div class="circle circle-md bg-yellow"><h2>XL</h2></div>
-										</div>
-									</div>
-								</div>
-
+							<div class="right-content">
 								<div>
-									<h3 class="text-center">Choose Celivery Methods</h3>
-
-									<div class="flex flex-row my-2">
-										<button class="btn round-md btn-c-shadow">Dine In</button>
-										<button class="btn round-md btn-c-shadow mx-1">
-											Door Delivery
-										</button>
-										<button class="btn round-md btn-c-shadow">Pick Up</button>
+									<div class="flex justify-between mb-2">
+										<h3 class="shadow">Address Details</h3>
+										<p>edit</p>
 									</div>
 
-									<form class="flex flex-row">
-										<div class="form-section">
-											<p>Set time:</p>
-											<input
-												type="text"
-												placeholder="Enter the time you’ll arrived"
-											/>
-										</div>
-									</form>
+									<div class="card-items">
+										<p class="card-section">
+											<span class="text-bold">Delivery</span> to Iskandar Street
+										</p>
+										<p class="card-section">
+											Km 5 refinery road oppsite republic road, effurun, Jakarta
+										</p>
+										<p>+62 81348287878</p>
+									</div>
 								</div>
-							</div>
-						</div>
-					</div>
+								<div class="my-4">
+									<h3 class="shadow mb-2">Payment Method</h3>
 
-					<div class="wrapper amount">
-						<div class="wrapper-content">
-							<div class="card-wrapper">
-								<div class="card-items shadow-box-grey">
-									<div class="amount-detail">
-										<div class="circle circle-lg">
-											<img
-												class="image"
-												src="../img/coldBrew.png"
-												alt="Cold Brew"
-											/>
+									<div class="card-items">
+										<div class="card-section flex flex-row items-center">
+											<input type="radio" value="card" name="method" />
+
+											<div class="square square-sm bg-orange mx-1">
+												<span class="material-icons"> payment </span>
+											</div>
+
+											<p>Card</p>
 										</div>
 
-										<div class="amount-data">
-											<h3>Cold Brew</h3>
-											<p>x1(large)</p>
-											<p>x1(regular</p>
-										</div>
-									</div>
+										<div class="card-section flex flex-row items-center">
+											<input type="radio" value="card" name="method" />
 
-									<div class="amount-input">
-										<div class="circle circle-sm bg-yellow">
-											<h4>-</h4>
+											<div class="square square-sm bg-brown mx-1">
+												<span class="material-icons"> account_balance </span>
+											</div>
+
+											<p>Bank Account</p>
 										</div>
 
-										<h4 class="value">2</h4>
+										<div class="flex flex-row items-center">
+											<input type="radio" value="card" name="method" />
 
-										<div class="circle circle-sm bg-yellow">
-											<h4>+</h4>
+											<div class="square square-sm bg-yellow mx-1">
+												<span class="material-icons"> local_shipping </span>
+											</div>
+
+											<p>Cash on delivery</p>
 										</div>
 									</div>
 								</div>
-							</div>
 
-							<div class="button-wrapper shadow-box-grey">
-								<div class="btn round-square bg-yellow round-md">
-									<h3>CHECKOUT</h3>
-								</div>
+								<button class="btn btn-rad-square w-full bg-brown">
+									Confirm and Pay
+								</button>
 							</div>
 						</div>
 					</div>
