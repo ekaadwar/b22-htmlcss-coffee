@@ -217,7 +217,7 @@ section.cart {
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
-	padding: 40px 0;
+  padding: 40px 0;
 }
 
 section.cart .card-items {
@@ -293,6 +293,10 @@ section.cart .total-price p {
   color: #362115;
   font-weight: bold;
   font-size: 20px;
+}
+
+section.cart .wrapper-content {
+  align-items: flex-start;
 }
 
 section.favorites {
@@ -372,6 +376,45 @@ section.jumbotron {
   color: #ffffff;
   min-height: 645px;
   padding-bottom: 75px;
+}
+
+section.history {
+  min-height: 100vh;
+  background-image: url("../img/coffeeFilter.jpg");
+  background-size: 100% auto;
+  background-position: center 40%;
+  background-repeat: no-repeat;
+}
+
+section.history .card-items{
+	padding: 20px;
+}
+
+section.history	.content{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	gap: 20px;
+}
+
+section.history .title-section {
+  max-width: 100%;
+  font-weight: bold;
+  color: white;
+}
+
+section.history .title-select {
+  max-width: 100%;
+  text-align: right;
+  line-height: 25px;
+  font-weight: bold;
+  color: white;
+}
+
+section.history .title-sub-section {
+  max-width: 100%;
+  text-align: center;
+  line-height: 25px;
+  color: white;
 }
 
 section.jumbotron ul li .material-icons {
@@ -831,7 +874,6 @@ ul {
   background-color: #a65307;
 }
 
-
 /* end of background property */
 
 /* button porperty */
@@ -1054,6 +1096,22 @@ ul {
 .mb-4 {
   margin-bottom: 40px;
 }
+
+.mr-1 {
+  margin-right: 10px;
+}
+
+.mr-2 {
+  margin-right: 20px;
+}
+
+.mr-3 {
+  margin-right: 30px;
+}
+
+.mr-4 {
+  margin-right: 40px;
+}
 /* end of margin property */
 
 /* width property */
@@ -1093,12 +1151,24 @@ ul {
   flex-direction: column;
 }
 
+.justify-between {
+  justify-content: space-between;
+}
+
 .justify-center {
   justify-content: center;
 }
 
 .items-center {
   align-items: center;
+}
+
+.items-start {
+  align-items: flex-start;
+}
+
+.items-end {
+  align-items: flex-end;
 }
 /* end of flex property */
 
@@ -1326,6 +1396,7 @@ ul {
   color: #4f5665;
 }
 
+/* title history */
 .title-main {
   font-size: 40px;
 }
@@ -1353,6 +1424,7 @@ ul {
   align-items: center;
   margin-bottom: 50px;
 }
+/* end of title history */
 
 .toggle-button {
   background-color: #6a4029;
