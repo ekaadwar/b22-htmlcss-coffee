@@ -389,7 +389,7 @@ section.jumbotron {
 section.history {
   min-height: 100vh;
   background-image: url("../img/coffeeFilter.jpg");
-  background-size: 100% auto;
+  background-size: cover;
   background-position: center 40%;
   background-repeat: no-repeat;
 }
@@ -400,7 +400,7 @@ section.history .card-items {
 
 section.history .content {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto;
   gap: 20px;
 }
 

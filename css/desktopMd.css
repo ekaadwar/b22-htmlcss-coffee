@@ -5,9 +5,13 @@
     display: flex;
   }
 
-	section.product .right-side {
-  flex: 2;
-}
+  section.product .right-side {
+    flex: 2;
+  }
+
+  section.history .content {
+    grid-template-columns: auto auto auto;
+  }
 
   .title-section {
     font-size: 36px;

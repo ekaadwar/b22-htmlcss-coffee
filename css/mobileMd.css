@@ -51,6 +51,10 @@
     display: none;
   }
 
+  section.history .content {
+    grid-template-columns: auto auto;
+  }
+
   .container {
     max-width: 640px;
   }
