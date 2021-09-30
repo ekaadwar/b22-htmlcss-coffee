@@ -84,7 +84,7 @@
 				</div>
 			</nav>
 
-			<section class="profile first font-poppins">
+			<section class="profile first font-poppins py-20">
 				<div class="container">
 					<h2 class="title-section shadow">User Profile</h2>
 
@@ -179,12 +179,22 @@
 
 									<div class="gender form-section">
 										<div class="flex items-center">
-											<input type="radio" id="male" value="male" name="gender" />
+											<input
+												type="radio"
+												id="male"
+												value="male"
+												name="gender"
+											/>
 											<label for="male"><p>Male</p></label>
 										</div>
 
 										<div class="flex items-center">
-											<input type="radio" id="female" value="female" name="gender" />
+											<input
+												type="radio"
+												id="female"
+												value="female"
+												name="gender"
+											/>
 											<label for="female"><p>Female</p></label>
 										</div>
 									</div>
@@ -192,7 +202,37 @@
 							</div>
 						</div>
 
-						<div class="buttons">buttons</div>
+						<div class="buttons">
+							<div class="buttons-wrap">
+								<h2 class="text-center text-white shadow">
+									Do you want to save the change?
+								</h2>
+
+								<div>
+									<button class="btn round-md w-full bg-yellow my-2">
+										Save Change
+									</button>
+
+									<button class="btn round-md w-full bg-brown">Cancel</button>
+								</div>
+
+								<div>
+									<button class="btn round-md w-full bg-white my-2">
+										<div class="flex justify-between w-full">
+											<p>Edit Password</p>
+											<span class="material-icons"> chevron_right </span>
+										</div>
+									</button>
+
+									<button class="btn round-md w-full bg-white">
+										<div class="flex justify-between w-full">
+											<p>Log Out</p>
+											<span class="material-icons"> chevron_right </span>
+										</div>
+									</button>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>

@@ -795,7 +795,6 @@ section.profile .content .details .card-items {
 }
 
 section.profile .content .contacts {
-  background-color: aqua;
   grid-area: 1 / 2 / 2 / 4;
 }
 
@@ -842,12 +841,15 @@ section.profile .content form .form-section textarea::placeholder {
 }
 
 section.profile .content .details {
-  background-color: yellowgreen;
   grid-area: 2 / 1 / 2 / 3;
 }
 
-section.profile .content .buttons {
-  background-color: beige;
+section.profile .content .buttons .buttons-wrap{
+  padding-left: 10%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
 }
 
 section.profile .content .photo-wrapper {
@@ -993,7 +995,7 @@ ul {
 
 .bg-white {
   background-color: white;
-  border: 1px solid #ffba33;
+  border: 2px solid #ffba33;
   color: #6a4029;
 }
 
@@ -1278,12 +1280,17 @@ ul {
   text-align: center;
 }
 
+
 .text-brown {
   color: #6a4029;
 }
 
 .text-grey {
   color: #4f5665;
+}
+
+.text-white {
+	color: white;
 }
 /* end of text property */
 
@@ -1461,6 +1468,11 @@ ul {
 .py-10 {
   padding-bottom: 2.5rem;
   padding-top: 2.5rem;
+}
+
+.py-20 {
+  padding-bottom: 5rem;
+  padding-top: 5rem;
 }
 /* End of Padding Property */
 
