@@ -1,12 +1,19 @@
 /* width 1024px-1279px */
 
 @media (min-width: 1024px) {
+  section.product-detail .amount {
+    display: inline-block;
+  }
   section.product .left-side {
     display: flex;
   }
 
   section.product .right-side {
     flex: 2;
+  }
+
+  section.product-detail .right-side {
+    display: inline-block;
   }
 
   section.history .content {

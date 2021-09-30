@@ -476,8 +476,7 @@ section.partner .image {
   width: 80%;
 }
 
-section.product,
-section.product-detail {
+section.product {
   height: 100vh;
   overflow-y: scroll;
 }
@@ -665,8 +664,12 @@ section.product .wrapper {
   display: flex;
 }
 
+section.product-detail {
+  padding-bottom: 100px;
+}
+
 section.product-detail .card-items {
-  padding: 50px;
+  padding: 50px 10px;
   box-sizing: border-box;
 }
 
@@ -690,8 +693,9 @@ section.product-detail form .form-section input {
   border-right: 0;
 }
 
-section.product-detail .amount {
+section.product-detail div.wrapper.amount {
   margin-top: 100px;
+	display: none !important;
 }
 
 section.product-detail .amount-detail {
@@ -712,25 +716,31 @@ section.product-detail .amount-input .value {
 }
 
 section.product-detail .left-side {
-  flex: 2;
   height: 600px;
 }
 
-section.product-detail .left-side .content {
-  justify-content: space-around;
-  padding: 0 50px;
+section.product-detail .left-side .circle {
+  margin-top: 40px;
 }
 
-section.product-detail .right-side {
-  flex: 3;
+section.product-detail .left-side .product-name {
+  margin: 20px 0;
 }
 
-section.product-detail {
-  padding-bottom: 100px;
+section
+
+section.product-detail .right-side{
+	display: none;
+}
+
+section.product-detail .right-side .method{
+	display: grid;
+	grid-template-columns: auto auto;
+	gap: 10px;
 }
 
 section.product-detail .wrapper-content {
-  align-items: flex-start;
+	flex-direction: column;
 }
 
 section.product-detail .wrapper-content .card-wrapper {
@@ -1126,8 +1136,8 @@ ul {
 }
 
 .circle-big {
-  height: 300px;
-  width: 300px;
+  height: 150px;
+  width: 150px;
 }
 /* end of circle property */
 

@@ -9,7 +9,6 @@
     background-image: url("../img/picnic200.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
-    /* background-size: auto 100%; */
     background-size: 50%;
   }
 
@@ -33,6 +32,19 @@
     align-items: flex-start;
   }
 
+  section.product-detail .left-side {
+    flex: 1;
+    height: 600px;
+  }
+
+  section.product-detail .left-side .content {
+    padding: 0 10px;
+  }
+
+  section.product-detail .right-side {
+    flex: 1;
+  }
+
   section.product .right-side .content {
     grid-template-columns: auto auto auto auto;
   }
@@ -45,6 +57,11 @@
     display: none;
   }
 
+  section.product-detail .wrapper-content {
+    align-items: flex-start;
+    flex-direction: row;
+  }
+
   .auth {
     width: 50%;
   }
@@ -53,6 +70,11 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+  }
+
+  .circle-big {
+    height: 300px;
+    width: 300px;
   }
 
   .container {
