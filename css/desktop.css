@@ -25,6 +25,75 @@
     display: inline;
   }
 
+  section.profile .content {
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 350px 350px;
+    grid-row-gap: 40px;
+    grid-column-gap: 30px;
+  }
+
+  section.profile .content .contacts .card-items,
+  section.profile .content .details .card-items {
+    padding: 20px;
+  }
+
+  section.profile .content .contacts {
+    grid-area: 1 / 2 / 2 / 4;
+  }
+
+  section.profile .content .contacts form {
+    display: grid;
+    grid-template-columns: 47% 47%;
+    column-gap: 6%;
+    row-gap: 10%;
+  }
+
+  section.profile .content .contacts .head,
+  section.profile .content .details .head {
+    grid-column: 1 / span 2;
+  }
+
+  section.profile .content .details {
+    grid-area: 2 / 1 / 2 / 3;
+  }
+
+  section.profile .content .buttons .buttons-wrap {
+    padding-left: 10%;
+  }
+
+  section.profile .content .photo-wrapper {
+    position: relative;
+  }
+
+  section.profile .content button.circle {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  section.profile .content .details form {
+    display: grid;
+    grid-template-columns: 60% 34%;
+    column-gap: 6%;
+  }
+
+  section.profile .content .details .date {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+
+  section.profile .content .details .gender {
+    grid-area: 3 / 2 / 4 / 3;
+  }
+
+  section.profile .content .details .gender input {
+    height: auto;
+  }
+
+  section.profile .title-section {
+    color: white;
+    text-align: left;
+  }
+
   .container {
     max-width: 1280px;
   }

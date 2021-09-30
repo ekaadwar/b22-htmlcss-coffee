@@ -757,17 +757,16 @@ section.product-detail .wrapper-content .btn {
 
 section.profile {
   background-image: url("../img/coffeeSeed.jpg");
-  background-size: 100% auto;
-  background-position: center 40%;
+  background-size: cover;
+  background-position: center 30%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   min-height: 100vh;
 }
 
 section.profile .content {
   display: grid;
-  grid-template-columns: 30% 30% 30%;
-  grid-template-rows: 350px 350px;
   grid-row-gap: 40px;
-  grid-column-gap: 30px;
 }
 
 section.profile .content .head {
@@ -791,23 +790,7 @@ section.profile .content .head .card-items {
 
 section.profile .content .contacts .card-items,
 section.profile .content .details .card-items {
-  padding: 20px;
-}
-
-section.profile .content .contacts {
-  grid-area: 1 / 2 / 2 / 4;
-}
-
-section.profile .content .contacts form {
-  display: grid;
-  grid-template-columns: 47% 47%;
-  column-gap: 6%;
-  row-gap: 10%;
-}
-
-section.profile .content .contacts .head,
-section.profile .content .details .head {
-  grid-column: 1 / span 2;
+  padding: 20px 10px;
 }
 
 section.profile .content form .form-section input {
@@ -840,16 +823,11 @@ section.profile .content form .form-section textarea::placeholder {
   font-family: "Poppins";
 }
 
-section.profile .content .details {
-  grid-area: 2 / 1 / 2 / 3;
-}
-
-section.profile .content .buttons .buttons-wrap{
-  padding-left: 10%;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	height: 100%;
+section.profile .content .buttons .buttons-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 
 section.profile .content .photo-wrapper {
@@ -862,27 +840,13 @@ section.profile .content button.circle {
   right: 0;
 }
 
-section.profile .content .details form {
-  display: grid;
-  grid-template-columns: 60% 34%;
-  column-gap: 6%;
-}
-
-section.profile .content .details .date{
-	grid-area: 2 / 2 / 3 / 3;
-}
-
-section.profile .content .details .gender{
-	grid-area: 3 / 2 / 4 / 3;
-}
-
-section.profile .content .details .gender input{
-	height: auto;
-}
-
 section.profile .title-section {
   color: white;
   text-align: left;
+}
+
+section.profile .content .details .gender input {
+  height: auto;
 }
 
 section.testimony .card-head {
@@ -1280,7 +1244,6 @@ ul {
   text-align: center;
 }
 
-
 .text-brown {
   color: #6a4029;
 }
@@ -1290,7 +1253,7 @@ ul {
 }
 
 .text-white {
-	color: white;
+  color: white;
 }
 /* end of text property */
 
