@@ -8,6 +8,28 @@
     align-items: center;
   }
 
+	section.profile .content {
+    grid-template-columns: 48% 48%;
+    grid-template-rows: 350px 350px 350px;
+    grid-row-gap: 40px;
+    grid-column-gap: 4%;
+  }
+
+  section.profile .content .contacts {
+    grid-area: 1 / 2 / 3 / 3;
+  }
+
+  section.profile .content .contacts form,
+	section.profile .content .details form {
+    display: grid;
+    row-gap: 10%;
+  }
+
+  section.profile .content .details {
+    grid-area: 2 / 1 / 4 / 2;
+  }
+
+
   section.product .right-side nav .nav-content .menu {
     width: 100%;
     display: inline-block;

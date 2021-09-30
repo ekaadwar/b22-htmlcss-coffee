@@ -769,30 +769,6 @@ section.profile .content {
   grid-row-gap: 40px;
 }
 
-section.profile .content .head {
-  box-sizing: border-box;
-}
-
-section.profile .content .head .email {
-  font-size: 12px;
-}
-
-section.profile .content .card-items {
-  border-bottom: 10px solid #6a4029;
-  height: 100%;
-}
-
-section.profile .content .head .card-items {
-  align-items: center;
-  justify-content: space-between;
-  padding: 40px 0;
-}
-
-section.profile .content .contacts .card-items,
-section.profile .content .details .card-items {
-  padding: 20px 10px;
-}
-
 section.profile .content form .form-section input {
   border-radius: 0;
   border: 0;
@@ -821,6 +797,30 @@ section.profile .content form .form-section textarea {
 section.profile .content form .form-section textarea::placeholder {
   color: #000;
   font-family: "Poppins";
+}
+
+section.profile .content .card-items {
+  border-bottom: 10px solid #6a4029;
+  height: 100%;
+}
+
+section.profile .content .head {
+  box-sizing: border-box;
+}
+
+section.profile .content .head .email {
+  font-size: 12px;
+}
+
+section.profile .content .head .card-items {
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 0;
+}
+
+section.profile .content .contacts .card-items,
+section.profile .content .details .card-items {
+  padding: 20px 10px;
 }
 
 section.profile .content .buttons .buttons-wrap {

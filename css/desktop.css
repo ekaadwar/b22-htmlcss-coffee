@@ -61,16 +61,6 @@
     padding-left: 10%;
   }
 
-  section.profile .content .photo-wrapper {
-    position: relative;
-  }
-
-  section.profile .content button.circle {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-  }
-
   section.profile .content .details form {
     display: grid;
     grid-template-columns: 60% 34%;
@@ -85,17 +75,8 @@
     grid-area: 3 / 2 / 4 / 3;
   }
 
-  section.profile .content .details .gender input {
-    height: auto;
-  }
-
-  section.profile .title-section {
-    color: white;
-    text-align: left;
-  }
-
   .container {
-    max-width: 1280px;
+    max-width: 1280px
   }
 
   .search-wrapper {
