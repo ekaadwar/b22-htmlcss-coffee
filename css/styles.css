@@ -2,6 +2,10 @@ body {
   margin: 0;
 }
 
+:focus-visible {
+  outline-width: 0;
+}
+
 a {
   text-decoration: none;
 }
@@ -17,6 +21,12 @@ li,
 p {
   margin: 0;
   padding: 0;
+}
+
+button {
+  padding: 0;
+  margin: 0;
+  border-width: 0;
 }
 
 footer {
@@ -73,16 +83,13 @@ footer .wrapper {
   justify-content: space-between;
 }
 
+/* form property */
 form .form-section {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
   margin-top: 10px;
   width: 100%;
-}
-
-form .form-section h4 {
-  color: #6a4029;
 }
 
 form .form-section .form-label {
@@ -109,6 +116,7 @@ form .form-section .btn .logo-wrapper {
   margin-right: 10px;
   width: 20px;
 }
+/* end of from property */
 
 nav {
   display: flex;
@@ -386,14 +394,14 @@ section.history {
   background-repeat: no-repeat;
 }
 
-section.history .card-items{
-	padding: 20px;
+section.history .card-items {
+  padding: 20px;
 }
 
-section.history	.content{
-	display: grid;
-	grid-template-columns: auto auto auto;
-	gap: 20px;
+section.history .content {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
 }
 
 section.history .title-section {
@@ -747,6 +755,134 @@ section.product-detail .wrapper-content .btn {
   height: 100%;
 }
 
+section.profile {
+  background-image: url("../img/coffeeSeed.jpg");
+  background-size: 100% auto;
+  background-position: center 40%;
+  min-height: 100vh;
+}
+
+section.profile .content {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: 350px 350px;
+  grid-row-gap: 40px;
+  grid-column-gap: 30px;
+}
+
+section.profile .content .head {
+  box-sizing: border-box;
+}
+
+section.profile .content .head .email {
+  font-size: 12px;
+}
+
+section.profile .content .card-items {
+  border-bottom: 10px solid #6a4029;
+  height: 100%;
+}
+
+section.profile .content .head .card-items {
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 0;
+}
+
+section.profile .content .contacts .card-items,
+section.profile .content .details .card-items {
+  padding: 20px;
+}
+
+section.profile .content .contacts {
+  background-color: aqua;
+  grid-area: 1 / 2 / 2 / 4;
+}
+
+section.profile .content .contacts form {
+  display: grid;
+  grid-template-columns: 47% 47%;
+  column-gap: 6%;
+  row-gap: 10%;
+}
+
+section.profile .content .contacts .head,
+section.profile .content .details .head {
+  grid-column: 1 / span 2;
+}
+
+section.profile .content form .form-section input {
+  border-radius: 0;
+  border: 0;
+  border-bottom: 1px solid #000;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  height: 40px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+section.profile .content form .form-section input::placeholder {
+  color: #000;
+}
+
+section.profile .content form .form-section textarea {
+  line-height: 20px;
+  border: 0;
+  border-bottom: 1px solid #000;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+}
+
+section.profile .content form .form-section textarea::placeholder {
+  color: #000;
+  font-family: "Poppins";
+}
+
+section.profile .content .details {
+  background-color: yellowgreen;
+  grid-area: 2 / 1 / 2 / 3;
+}
+
+section.profile .content .buttons {
+  background-color: beige;
+}
+
+section.profile .content .photo-wrapper {
+  position: relative;
+}
+
+section.profile .content button.circle {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+section.profile .content .details form {
+  display: grid;
+  grid-template-columns: 60% 34%;
+  column-gap: 6%;
+}
+
+section.profile .content .details .date{
+	grid-area: 2 / 2 / 3 / 3;
+}
+
+section.profile .content .details .gender{
+	grid-area: 3 / 2 / 4 / 3;
+}
+
+section.profile .content .details .gender input{
+	height: auto;
+}
+
+section.profile .title-section {
+  color: white;
+  text-align: left;
+}
+
 section.testimony .card-head {
   display: flex;
   flex-direction: row;
@@ -876,7 +1012,7 @@ ul {
 
 /* end of background property */
 
-/* button porperty */
+/* button property */
 .btn {
   align-items: center;
   border-width: 0;
@@ -888,6 +1024,12 @@ ul {
   justify-content: center;
   padding-left: 24px;
   padding-right: 24px;
+}
+
+.btn-square {
+  padding-left: 0;
+  padding-right: 0;
+  width: 40px;
 }
 
 .btn-c-brown {
@@ -951,6 +1093,7 @@ ul {
 }
 /* end of border radius property */
 
+/* card property */
 .card {
   width: 100%;
   overflow-x: scroll;
@@ -965,6 +1108,7 @@ ul {
   border-radius: 10px;
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
 }
 
 .card-wrapper {
@@ -974,6 +1118,7 @@ ul {
   min-width: 800px;
   width: 100%;
 }
+/* end of card property */
 
 /* circle property */
 .circle {
@@ -982,7 +1127,6 @@ ul {
   display: flex;
   justify-content: center;
   overflow: hidden;
-  width: 54px;
 }
 
 .circle-xs {
@@ -1008,6 +1152,11 @@ ul {
 .circle-xl {
   height: 100px;
   width: 100px;
+}
+
+.circle-2xl {
+  height: 120px;
+  width: 120px;
 }
 
 .circle-big {
