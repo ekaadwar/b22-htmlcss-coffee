@@ -10,7 +10,7 @@
 
 	section.profile .content {
     grid-template-columns: 48% 48%;
-    grid-template-rows: 350px 350px 350px;
+    grid-template-rows: auto auto auto;
     grid-row-gap: 40px;
     grid-column-gap: 4%;
   }
@@ -19,10 +19,13 @@
     grid-area: 1 / 2 / 3 / 3;
   }
 
-  section.profile .content .contacts form,
-	section.profile .content .details form {
+  section.profile .content .contacts form {
     display: grid;
     row-gap: 10%;
+  }
+
+	section.profile .content .details form {
+    display: grid;
   }
 
   section.profile .content .details {
