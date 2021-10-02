@@ -1,6 +1,13 @@
 /* width 1024px-1279px */
 
 @media (min-width: 1024px) {
+  section.cart .left-content {
+    padding-right: 50px;
+  }
+
+  section.cart .right-content {
+    padding-left: 50px;
+  }
   section.product-detail .amount {
     display: inline-block;
   }

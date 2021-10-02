@@ -1,6 +1,28 @@
 /* for display 640px - 768px */
 
 @media (min-width: 640px) {
+  section.cart .cart-product {
+    grid-template-columns: auto auto auto auto;
+  }
+
+  section.cart .card-items {
+    margin-bottom: 0;
+  }
+
+  section.cart .left-content {
+    width: 100%;
+    padding-right: 2px;
+  }
+
+  section.cart .right-side {
+    padding-left: 2px;
+  }
+
+  section.cart .wrapper-content {
+    align-items: flex-start;
+    flex-direction: row;
+  }
+
   section.advantages .wrapper-image {
     display: flex;
     flex-direction: row;
