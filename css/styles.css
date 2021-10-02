@@ -693,13 +693,14 @@ section.product-detail form .form-section input {
   border-right: 0;
 }
 
-section.product-detail div.wrapper.amount {
+section.product-detail .amount {
   margin-top: 100px;
-	display: none !important;
+	/* display: none !important; */
 }
 
 section.product-detail .amount-detail {
   display: flex;
+	margin-bottom: 20px;
 }
 
 section.product-detail .amount-data {
@@ -744,21 +745,22 @@ section.product-detail .wrapper-content {
 }
 
 section.product-detail .wrapper-content .card-wrapper {
-  flex: 3;
-  height: 120px;
+  min-height: 120px;
+	margin-bottom: 20px;
 }
 
 section.product-detail .wrapper-content .card-wrapper .card-items {
-  flex-direction: row;
-  width: 90%;
-  padding: 25px;
-  justify-content: space-between;
   align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 25px;
+	width: 100%;
 }
 
 section.product-detail .wrapper-content .button-wrapper {
   flex: 1;
   height: 120px;
+	width: 100%;
 }
 
 section.product-detail .wrapper-content .btn {
@@ -1091,7 +1093,6 @@ ul {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  min-width: 800px;
   width: 100%;
 }
 /* end of card property */

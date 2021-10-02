@@ -62,6 +62,15 @@
     flex-direction: row;
   }
 
+  section.product-detail .wrapper-content .card-wrapper {
+    margin-bottom: 0;
+  }
+
+  section.product-detail .wrapper-content .card-wrapper .card-items {
+    padding: 0 25px;
+    width: 90%;
+  }
+
   .auth {
     width: 50%;
   }

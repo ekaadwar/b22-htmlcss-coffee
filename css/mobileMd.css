@@ -50,6 +50,11 @@
     display: none;
   }
 
+  section.product-detail .amount-detail {
+    display: flex;
+    margin-bottom: 0;
+  }
+
   section.product-detail .card-items {
     padding: 50px;
   }
@@ -58,6 +63,10 @@
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 10px;
+  }
+
+  section.product-detail .wrapper-content .card-wrapper .card-items {
+    flex-direction: row;
   }
 
   section.history .content {
