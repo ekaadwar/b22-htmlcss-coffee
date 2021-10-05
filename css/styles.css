@@ -403,6 +403,7 @@ section.history {
   background-image: url("../img/coffeeFilter.jpg");
   background-size: cover;
   background-position: center 40%;
+	background-attachment: fixed;
   background-repeat: no-repeat;
 }
 
