@@ -141,8 +141,37 @@ section.advantages {
   background-color: white;
 }
 
+section.advantages .explain {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+section.advantages .image {
+  max-width: 575px;
+}
+
+section.advantages .wrapper {
+  padding-top: 100px;
+}
+
+section.advantages .wrapper-image {
+  display: none;
+}
+
+section.advantages .wrapper-data {
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+section.advantages ul li .material-icons,
+section.favorites ul li .material-icons {
+  color: #2fab73;
+  margin-right: 10px;
+}
+
 section.auth-page {
-  height: 100vh;
+  min-height: 600px;
+	height: 100vh;
   max-height: 1070px;
 }
 
@@ -157,6 +186,7 @@ section.forgot-pass {
   background-size: cover;
   color: white;
   height: 100vh;
+	min-height: 600px;
   position: relative;
 }
 
@@ -193,28 +223,6 @@ section li {
 section p,
 footer p {
   line-height: 30px;
-}
-
-section.advantages .explain {
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
-
-section.advantages .image {
-  max-width: 575px;
-}
-
-section.advantages .wrapper-image {
-  display: none;
-}
-
-section.advantages .wrapper-data {
-  margin-bottom: 50px;
-  margin-top: 50px;
-}
-
-section.advantages .wrapper {
-  padding-top: 100px;
 }
 
 section.cart {
@@ -323,7 +331,7 @@ section.favorites button {
 section.favorites .card-items {
   align-items: center;
   border: 1px solid #aaa;
-  height: 600px;
+  min-height: 750px;
   padding-bottom: 50px;
   padding-top: 50px;
   width: 300px;
@@ -749,6 +757,7 @@ section.product-detail .wrapper-content {
 section.product-detail .wrapper-content .card-wrapper {
   min-height: 120px;
   margin-bottom: 20px;
+	min-width: 0;
 }
 
 section.product-detail .wrapper-content .card-wrapper .card-items {
@@ -1095,6 +1104,7 @@ ul {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  min-width: 800px;
   width: 100%;
 }
 /* end of card property */
